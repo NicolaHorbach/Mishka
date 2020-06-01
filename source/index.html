@@ -52,35 +52,34 @@
           <li class="menu-list__item">
             <a class="menu-list__link" href="#">
               <h2 class="menu-list__title">Предметы интерьера</h2>
-              <img class="menu-list__icon" src="https://via.placeholder.com/35x35">
-              <!-- Тоже через цсс? -->
             </a>
+            <img class="menu-list__icon" src="https://via.placeholder.com/35x35">
           </li>
           <li class="menu-list__item">
             <a class="menu-list__link" href="#">
               <h2 class="menu-list__title">Детские игрушки</h2>
-              <img class="menu-list__icon" src="https://via.placeholder.com/35x35">
             </a>
+            <img class="menu-list__icon" src="https://via.placeholder.com/35x35">
           </li>
           <li class="menu-list__item">
             <div class="item-card">
-              <div class="item-card__title">
-                <p class="item-card__title-text">Вязаные корзинки <span class="info-card__title-bonus-info">ТОВАР НЕДЕЛИ</span></p>
-              </div>
               <div class="item-card__info">
+                <div class="item-card__title">
+                  <p class="item-card__title-text">Вязаные корзинки <span class="info-card__title-bonus-info">ТОВАР НЕДЕЛИ</span></p>
+                </div>
                 <p class="item-card__info-text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-                <ul class="item-card__characters characters-list">
-                  <li class="characters-list__item">
-                    <p class="characters-list__info">Цвет:</p>
-                    <p class="characters-list__info">«Тиффани»/серый</p>
+                <ul class="item-card__qualities qualities-list">
+                  <li class="qualities-list__item">
+                    <p class="qualities-list__info">Цвет:</p>
+                    <p class="qualities-list__info">«Тиффани»/серый</p>
                   </li>
-                  <li class="characters-list__item">
-                    <p class="characters-list__info">Диаметр:</p>
-                    <p class="characters-list__info">25 см</p>
+                  <li class="qualities-list__item">
+                    <p class="qualities-list__info">Диаметр:</p>
+                    <p class="qualities-list__info">25 см</p>
                   </li>
-                  <li class="characters-list__item">
-                    <p class="characters-list__info">Высота:</p>
-                    <p class="characters-list__info">15 см</p>
+                  <li class="qualities-list__item">
+                    <p class="qualities-list__info">Высота:</p>
+                    <p class="qualities-list__info">15 см</p>
                   </li>
                 </ul>
               </div>
@@ -90,8 +89,8 @@
               <div class="item-card__price">
                 <p class="item-card__price-text">Цена: 990 руб.</p>
               </div>
-              <div class="item-card__button">
-                <button class="" type="button">ЗАКАЗАТЬ</button>
+              <div class="item-card__link-wrapper">
+                <a class="item-card__link" href="#">ЗАКАЗАТЬ</a>
               </div>
             </div>
           </li>
@@ -104,7 +103,7 @@
             <li class="about-us__item">
               <div class="about-us__wrapper">
                 <img class="about-us__image" src="https://via.placeholder.com/35x35">
-                <!-- тоже через цсс? -->
+                <!-- Свг иконка -->
               </div>
               <p class="about-us__text">Экологически чистые материалы</p>
             </li>
@@ -143,21 +142,31 @@
       </section>
       <section class="feedback">
         <h2 class="feedback__title">Отзывы</h2>
-        <div class="feedback__fixture">
-          <blockquote>
-            <p class="feedback__citation">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite><span class="feedback__citation-author">Анастасия Красильникова</span> <a class="feedback__citation-link" href="#">@misssssiskras</a></cite>
-          </blockquote>
-          <div class="feedback__fixture-buttons">
-            <button type="button" class="fixture__button" aria-label="Показать прошлый отзыв">
-              <img class="fixture__button-image" href="https://via.placeholder.com/35x35" aria-hidden="true">
+        <div class="feedback__slider">
+          <ul class="reviews-list">
+            <li class="reviews-list__item active">
+              <blockquote class="feedback__citation-wrapper">
+                <p class="feedback__citation">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite><span class="feedback__citation-author">Анастасия Красильникова</span> <a class="feedback__citation-link" href="#">@misssssiskras</a></cite>
+              </blockquote>
+            </li>
+            <li class="reviews-list__item hidden">
+              <blockquote class="feedback__citation-wrapper">
+                <p class="feedback__citation">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite><span class="feedback__citation-author">Анастасия Красильникова</span> <a class="feedback__citation-link" href="#">@misssssiskras</a></cite>
+              </blockquote>
+            </li>
+          </ul>
+          <div class="feedback__slider-buttons">
+            <button type="button" class="slider__button" aria-label="Показать прошлый отзыв">
+              <img class="slider__button-image" href="https://via.placeholder.com/35x35" aria-hidden="true">
             </button>
-            <button type="button" class="fixture__button" aria-label="Показать следующий отзыв">
-              <img class="fixture__button-image" href="https://via.placeholder.com/35x35" aria-hidden="true">
+            <button type="button" class="slider__button" aria-label="Показать следующий отзыв">
+              <img class="slider__button-image" href="https://via.placeholder.com/35x35" aria-hidden="true">
             </button>
           </div>
-          <div class="feedback__button-wrapper">
-            <button class="feedback__button" type="button">НАПИСАТЬ</button>
+          <div class="feedback__link-wrapper">
+            <a class="feedback__link" href="#">НАПИСАТЬ</a>
           </div>
         </div>
       </section>
