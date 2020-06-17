@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mishka deals</title>
+    <title>Каалог товаров</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -43,60 +43,75 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-name">
-        <h2 class="page-name__text">Каталог товаров</h2>
+      <div class="page-title">
+        <h1 class="page-title__text">Каталог товаров</h1>
       </div>
-      <div class="offers">
-        <ul class="offers__list">
-          <li class="offers__item">
-            <div class="item-card">
+      <div class="catalog">
+        <h2 class="catalog__title visually-hidden">Список товаров</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <article class="item-card">
               <div class="itam-card__image-wrapper">
                 <img class="item-card__image" src="https://via.placeholder.com/260x195" alt="Вязаный зайчик">
               </div>
               <div class="item-card__info">
                 <h3 class="item-card__info-title">Зайчик-попрыгайчик</h3>
                 <p class="item-card__info-details">Рост 30 см, вес 200 г</p>
-                <p class="item-card__info-price">1 200 руб.</p>
-                <!-- Место для корзинки -->
+                <div class="item-card__footer">
+                  <p class="item-card__footer-price">1 200 руб.</p>
+                  <a class="item-card__footer-link" href="#" aria-label="Добавить в корзину">
+                    <img src="https://via.placeholder.com/15x15" aria-hidden="true">
+                  </a>
+                </div>
               </div>
-            </div>
+            </article>
           </li>
-          <li class="offers__item">
-            <div class="item-card">
+          <li class="catalog__item">
+            <article class="item-card">
               <div class="itam-card__image-wrapper">
                 <img class="item-card__image" src="https://via.placeholder.com/260x195" alt="Вязаная корзинка">
               </div>
               <div class="item-card__info">
                 <h3 class="item-card__info-title">Корзинка для белья</h3>
-                <p class="item-card__info-details">Корзинка для белья</p>
-                <p class="item-card__info-price">690 руб.</p>
-                <!-- Место для корзинки -->
+                <p class="item-card__info-details">Диаметр 15 см, высота 10 см</p>
+                <div class="item-card__footer">
+                  <p class="item-card__footer-price">690 руб.</p>
+                  <a class="item-card__footer-link" href="#" aria-label="Добавить в корзину">
+                    <img src="https://via.placeholder.com/15x15" aria-hidden="true">
+                  </a>
+                </div>
               </div>
-            </div>
+            </article>
           </li>
-          <li class="offers__item"><div class="item-card">
-            <div class="itam-card__image-wrapper">
-              <img class="item-card__image" src="https://via.placeholder.com/260x195" alt="Большая вязаная корзинка">
-            </div>
-            <div class="item-card__info">
-              <h3 class="item-card__info-title">Большая корзинка для игрушек</h3>
-              <p class="item-card__info-details">Большая корзинка для игрушек</p>
-              <p class="item-card__info-price">Большая корзинка для игрушек</p>
-              <!-- Место для корзинки -->
-            </div>
-          </div></li>
-          <li class="offers__item"><div class="item-card">
-            <div class="item-card__info">
-              <h3 class="item-card__info-title">Процесс производства</h3>
-              <video class="item-card__video" width="260" height="150" poster="https://via.placeholder.com/260x150">
-                <source src="https://www.youtube.com/watch?v=oo1WouI38rQ">
-               </video>
-              <p class="item-card__info-details">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-              <a class="item-card__link" href="#">СДЕЛАТЬ ЗАКАЗ</a>
-            </div>
-          </div></li>
+          <li class="catalog__item">
+            <article class="item-card">
+              <div class="itam-card__image-wrapper">
+                <img class="item-card__image" src="https://via.placeholder.com/260x195" alt="Большая вязаная корзинка">
+              </div>
+              <div class="item-card__info">
+                <h3 class="item-card__info-title">Большая корзинка для игрушек</h3>
+                <p class="item-card__info-details">Диаметр 30 см, высота 30 см</p>
+                <div class="item-card__footer">
+                  <p class="item-card__footer-price">1 500 руб.</p>
+                  <a class="item-card__footer-link" href="#" aria-label="Добавить в корзину">
+                    <img src="https://via.placeholder.com/15x15" aria-hidden="true">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
         </ul>
       </div>
+      <article class="promotion">
+        <div class="promotion__info">
+          <h3 class="promotion__info-title">Процесс производства</h3>
+          <video class="promotion__video" width="260" height="150" poster="https://via.placeholder.com/260x150">
+            <source src="https://www.youtube.com/watch?v=oo1WouI38rQ">
+            </video>
+          <p class="promotion__info-details">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="promotion__link" href="#">СДЕЛАТЬ ЗАКАЗ</a>
+        </div>
+      </article>
     </main>
     <footer class="page-footer">
       <div class="page-footer__social">
