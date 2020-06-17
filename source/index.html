@@ -7,135 +7,132 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <a class="page-header__logo-link" aria-label="Перейти на главную страницу">
-          <img class="page-header__logo-img" src="https://via.placeholder.com/35x85" alt="Mishka">
-        </a>
+      <div class="page-header__body">
+        <div class="page-header__logo">
+          <a class="page-header__logo-link" aria-label="Перейти на главную страницу">
+            <img class="page-header__logo-img" src="https://via.placeholder.com/35x85" alt="Mishka">
+          </a>
+        </div>
       </div>
       <div class="page-header__menu">
         <button class="burger-button" type="button"></button>
-        <div class="burger-menu hidden">
           <ul class="burger-menu__list">
             <li class="burger-menu__item">
               <a class="burger-menu__link" href="#" aria-label="Перейти к каталогу товаров">
-                <h3 class="burger-menu__title">Каталог товаров</h3>
+                <p class="burger-menu__text">Каталог товаров</p>
               </a>
             </li>
             <li class="burger-menu__item">
               <a class="burger-menu__link" href="#" aria-label="Перейти к вязанию на заказ">
-                <h3 class="burger-menu__title">Вязание на заказ</h3>
+                <p class="burger-menu__text">Вязание на заказ</p>
               </a>
             </li>
             <li class="burger-menu__item">
               <a class="burger-menu__link" href="#" aria-label="Начать поиск по сайту">
                 <img class="burger-menu__icon" src="https://via.placeholder.com/18x18" aria-hidden="true">
-                <h3 class="burger-menu__title">Поиск по сайту</h3>
+                <p class="burger-menu__text">Поиск по сайту</p>
               </a>
             </li>
             <li class="burger-menu__item">
               <a class="burger-menu__link" href="#" aria-label="Открыть корзину">
                 <img class="burger-menu__icon" src="https://via.placeholder.com/18x18" aria-hidden="true">
-                <h3 class="burger-menu__title">Корзина: пока пуста</h3>
+                <p class="burger-menu__text">Корзина: пока пуста</p>
               </a>
             </li>
           </ul>
-        </div>
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__hero">
-        <!-- Картинку через цсс -->
-        <h1 class="page-main__hero-title">Милые штучки ручной работы для дома</h1>
-      </div>
-      <div class="page-main__menu">
-        <ul class="menu-list">
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">
-              <h2 class="menu-list__title">Предметы интерьера</h2>
+      <section class="hero">
+        <img class="hero__image" src="https://via.placeholder.com/322x373" alt="Вязаные игрушки и предметы интерьера">
+        <h1 class="hero__title">Милые штучки ручной работы для дома</h1>
+        <ul class="hero__menu">
+          <li class="hero__menu__item">
+            <a class="hero__menu__link" href="#">
+              <p class="hero__menu__text">Предметы интерьера</p>
             </a>
-            <img class="menu-list__icon" src="https://via.placeholder.com/35x35">
+            <img class="hero__menu__icon" src="https://via.placeholder.com/35x35">
           </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">
-              <h2 class="menu-list__title">Детские игрушки</h2>
+          <li class="hero__menu__item">
+            <a class="hero__menu__link" href="#">
+              <p class="hero__menu__text">Детские игрушки</p>
             </a>
-            <img class="menu-list__icon" src="https://via.placeholder.com/35x35">
-          </li>
-          <li class="menu-list__item">
-            <div class="item-card">
-              <div class="item-card__info">
-                <div class="item-card__title">
-                  <p class="item-card__title-text">Вязаные корзинки <span class="info-card__title-bonus-info">ТОВАР НЕДЕЛИ</span></p>
-                </div>
-                <p class="item-card__info-text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-                <ul class="item-card__qualities qualities-list">
-                  <li class="qualities-list__item">
-                    <p class="qualities-list__info">Цвет:</p>
-                    <p class="qualities-list__info">«Тиффани»/серый</p>
-                  </li>
-                  <li class="qualities-list__item">
-                    <p class="qualities-list__info">Диаметр:</p>
-                    <p class="qualities-list__info">25 см</p>
-                  </li>
-                  <li class="qualities-list__item">
-                    <p class="qualities-list__info">Высота:</p>
-                    <p class="qualities-list__info">15 см</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="item-card__image-container">
-                <img class="item-card__image" src="https://via.placeholder.com/260x315" alt="Разноцветные вязаные корзинки в руках">
-              </div>
-              <div class="item-card__price">
-                <p class="item-card__price-text">Цена: 990 руб.</p>
-              </div>
-              <div class="item-card__link-wrapper">
-                <a class="item-card__link" href="#">ЗАКАЗАТЬ</a>
-              </div>
-            </div>
+            <img class="hero__menu__icon" src="https://via.placeholder.com/35x35">
           </li>
         </ul>
-      </div>
-      <section class="page-main__about-us">
-        <h2 class="about-us__title">Коротко о нас:</h2>
-        <div class="about-us__info">
-          <ul class="about-us__list">
-            <li class="about-us__item">
-              <div class="about-us__wrapper">
-                <img class="about-us__image" src="https://via.placeholder.com/35x35">
+      </section>
+      <section class="week-offer">
+        <h2 class="week-offer__title visually-hidden">Товар недели – Вязаные корзинки</h2>
+        <div class="week-offer__wrapper">
+          <div class="week-offer__info">
+            <p class="week-offer__info-title">Вязаные корзинки <span class="info-card__info-title info-title__theme-blue">ТОВАР НЕДЕЛИ</span></p>
+            <p class="week-offer__info-text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+            <ul class="week-offer__qualities qualities-list">
+              <li class="qualities-list__item">
+                <p class="qualities-list__info">Цвет:</p>
+                <p class="qualities-list__info">«Тиффани»/серый</p>
+              </li>
+              <li class="qualities-list__item">
+                <p class="qualities-list__info">Диаметр:</p>
+                <p class="qualities-list__info">25 см</p>
+              </li>
+              <li class="qualities-list__item">
+                <p class="qualities-list__info">Высота:</p>
+                <p class="qualities-list__info">15 см</p>
+              </li>
+            </ul>
+          </div>
+          <div class="week-offer__image-container">
+            <img class="week-offer__image" src="https://via.placeholder.com/260x315" alt="Разноцветные вязаные корзинки в руках">
+          </div>
+          <div class="week-offer__price">
+            <p class="week-offer__price-text">Цена: 990 руб.</p>
+          </div>
+          <div class="week-offer__link-wrapper">
+            <a class="week-offer__link" href="#">ЗАКАЗАТЬ</a>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <h2 class="advantages__title">Коротко о нас:</h2>
+        <div class="advantages__info">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__wrapper">
+                <img class="advantages__image" src="https://via.placeholder.com/35x35">
                 <!-- Свг иконка -->
               </div>
-              <p class="about-us__text">Экологически чистые материалы</p>
+              <p class="advantages__text">Экологически чистые материалы</p>
             </li>
-            <li class="about-us__item">
-              <div class="about-us__wrapper">
-                <img class="about-us__image" src="https://via.placeholder.com/35x35">
+            <li class="advantages__item">
+              <div class="advantages__wrapper">
+                <img class="advantages__image" src="https://via.placeholder.com/35x35">
               </div>
-              <p class="about-us__text">Скандинавский стиль по российской цене</p>
+              <p class="advantages__text">Скандинавский стиль по российской цене</p>
             </li>
-            <li class="about-us__item">
-              <div class="about-us__wrapper">
-                <img class="about-us__image" src="https://via.placeholder.com/35x35">
+            <li class="advantages__item">
+              <div class="advantages__wrapper">
+                <img class="advantages__image" src="https://via.placeholder.com/35x35">
               </div>
-              <p class="about-us__text">Увеличивает лайки на фотографиях</p>
+              <p class="advantages__text">Увеличивает лайки на фотографиях</p>
             </li>
-            <li class="about-us__item">
-              <div class="about-us__wrapper">
-                <img class="about-us__image" src="https://via.placeholder.com/35x35">
+            <li class="advantages__item">
+              <div class="advantages__wrapper">
+                <img class="advantages__image" src="https://via.placeholder.com/35x35">
               </div>
-              <p class="about-us__text">Связано вручную с любовью и умилением</p>
+              <p class="advantages__text">Связано вручную с любовью и умилением</p>
             </li>
-            <li class="about-us__item">
-              <div class="about-us__wrapper">
-                <img class="about-us__image" src="https://via.placeholder.com/35x35">
+            <li class="advantages__item">
+              <div class="advantages__wrapper">
+                <img class="advantages__image" src="https://via.placeholder.com/35x35">
               </div>
-              <p class="about-us__text">Поддержка отечественного производителя</p>
+              <p class="advantages__text">Поддержка отечественного производителя</p>
             </li>
-            <li class="about-us__item">
-              <div class="about-us__wrapper">
-                <img class="about-us__image" src="https://via.placeholder.com/35x35">
+            <li class="advantages__item">
+              <div class="advantages__wrapper">
+                <img class="advantages__image" src="https://via.placeholder.com/35x35">
               </div>
-              <p class="about-us__text">Поставляется в подарочной упаковке</p>
+              <p class="advantages__text">Поставляется в подарочной упаковке</p>
             </li>
           </ul>
         </div>
@@ -185,7 +182,7 @@
           </ul>
         </div>
         <div class="contact-us__map">
-          <!-- ЭТО КАРТА -->
+          <img class="contact-us__map-image" src="https://via.placeholder.com/322x457" alt="Карта проезда к нашему офису">
         </div>
         <div class="contact-us__button-wrapper">
           <button class="contact-us__button" type="button">НАПИШИТЕ НАМ</button>
@@ -196,13 +193,13 @@
       <div class="page-footer__social">
         <ul class="social-list">
           <li class="social-list__item">
-            <a class="social-list__link" href="#" aria-label="Перейти в наш инстаграм"><img class="social-list__link-icon" src="https://via.placeholder.com/35x35"></a>
+            <a class="social-list__link" href="#" aria-label="Перейти в наш инстаграм"><img class="social-list__link-icon" src="https://via.placeholder.com/35x35" aria-hidden="true"></a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="#" aria-label="Перейти в наш фейсбук"><img class="social-list__link-icon" src="https://via.placeholder.com/35x35"></a>
+            <a class="social-list__link" href="#" aria-label="Перейти в наш фейсбук"><img class="social-list__link-icon" src="https://via.placeholder.com/35x35" aria-hidden="true"></a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="#" aria-label="Перейти в наш твиттер"><img class="social-list__link-icon" src="https://via.placeholder.com/35x35"></a>
+            <a class="social-list__link" href="#" aria-label="Перейти в наш твиттер"><img class="social-list__link-icon" src="https://via.placeholder.com/35x35" aria-hidden="true"></a>
           </li>
         </ul>
       </div>
