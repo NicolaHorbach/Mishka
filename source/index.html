@@ -6,6 +6,194 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>§§§</h1>
+    <header class="page-header">
+      <div class="page-header__body">
+        <div class="page-header__logo">
+          <a class="page-header__logo-link" aria-label="Перейти на главную страницу">
+            <img class="page-header__logo-img" src="https://via.placeholder.com/35x85" alt="Mishka">
+          </a>
+        </div>
+      </div>
+      <div class="page-header__menu">
+        <button class="burger-button" type="button"></button>
+        <ul class="page-header__menu-list">
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="#">Вязание на заказ</a>
+          </li>
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="#">
+              <img class="page-header__menu-icon" src="https://via.placeholder.com/18x18" aria-hidden="true">Поиск по сайту</a>
+          </li>
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="#">
+              <img class="page-header__menu-icon" src="https://via.placeholder.com/18x18" aria-hidden="true">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="hero">
+        <img class="hero__image" src="https://via.placeholder.com/322x373" alt="Вязаные игрушки и предметы интерьера">
+        <h1 class="hero__title">Милые штучки ручной работы для дома</h1>
+        <ul class="hero__menu">
+          <li class="hero__menu-item">
+            <a class="hero__menu-link" href="#">Предметы интерьера</a>
+            <img class="hero__menu-icon" src="https://via.placeholder.com/35x35">
+          </li>
+          <li class="hero__menu-item">
+            <a class="hero__menu-link" href="#">Детские игрушки</a>
+            <img class="hero__menu-icon" src="https://via.placeholder.com/35x35">
+          </li>
+        </ul>
+      </section>
+      <section class="week-offer">
+        <h2 class="week-offer__title visually-hidden">Товар недели – Вязаные корзинки</h2>
+        <div class="week-offer__wrapper">
+          <div class="week-offer__info">
+            <p class="week-offer__title">Вязаные корзинки <span class="week-offer__title-label">ТОВАР НЕДЕЛИ</span></p>
+            <p class="week-offer__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+            <ul class="week-offer__qualities qualities-list">
+              <li class="qualities-list__item">
+                <p class="qualities-list__info">Цвет:</p>
+                <p class="qualities-list__info">«Тиффани»/серый</p>
+              </li>
+              <li class="qualities-list__item">
+                <p class="qualities-list__info">Диаметр:</p>
+                <p class="qualities-list__info">25 см</p>
+              </li>
+              <li class="qualities-list__item">
+                <p class="qualities-list__info">Высота:</p>
+                <p class="qualities-list__info">15 см</p>
+              </li>
+            </ul>
+          </div>
+          <div class="week-offer__image-container">
+            <img class="week-offer__image" src="https://via.placeholder.com/260x315" alt="Разноцветные вязаные корзинки в руках">
+          </div>
+          <p class="week-offer__price">Цена: 990 руб.</p>
+          <a class="week-offer__link" href="#">Заказать</a>
+        </div>
+      </section>
+      <section class="advantages">
+        <h2 class="advantages__title">Коротко о нас:</h2>
+        <div class="advantages__info">
+          <ul class="advantages__list">
+            <li class="advantages__list-item">
+              <div class="advantages__image-wrapper">
+                <img class="advantages__image" src="https://via.placeholder.com/35x35">
+              </div>
+              <p class="advantages__text">Экологически чистые материалы</p>
+            </li>
+            <li class="advantages__list-item">
+              <div class="advantages__image-wrapper">
+                <img class="advantages__image" src="https://via.placeholder.com/35x35">
+              </div>
+              <p class="advantages__text">Скандинавский стиль по российской цене</p>
+            </li>
+            <li class="advantages__list-item">
+              <div class="advantages__image-wrapper">
+                <img class="advantages__image" src="https://via.placeholder.com/35x35">
+              </div>
+              <p class="advantages__text">Увеличивает лайки на фотографиях</p>
+            </li>
+            <li class="advantages__list-item">
+              <div class="advantages__image-wrapper">
+                <img class="advantages__image" src="https://via.placeholder.com/35x35">
+              </div>
+              <p class="advantages__text">Связано вручную с любовью и умилением</p>
+            </li>
+            <li class="advantages__list-item">
+              <div class="advantages__image-wrapper">
+                <img class="advantages__image" src="https://via.placeholder.com/35x35">
+              </div>
+              <p class="advantages__text">Поддержка отечественного производителя</p>
+            </li>
+            <li class="advantages__list-item">
+              <div class="advantages__image-wrapper">
+                <img class="advantages__image" src="https://via.placeholder.com/35x35">
+              </div>
+              <p class="advantages__text">Поставляется в подарочной упаковке</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="feedback">
+        <h2 class="feedback__title">Отзывы</h2>
+        <div class="feedback__slider">
+          <ul class="feedback__list">
+            <li class="feedback__list-item active">
+              <blockquote class="feedback__citation-wrapper">
+                <p class="feedback__citation">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite>
+                  <span class="feedback__citation-author">Анастасия Красильникова</span>
+                  <a class="feedback__citation-link" href="#">@misssssiskras</a>
+                </cite>
+              </blockquote>
+            </li>
+            <li class="feedback__list-item hidden">
+              <blockquote class="feedback__citation-wrapper">
+                <p class="feedback__citation">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite>
+                  <span class="feedback__citation-author">Анастасия Красильникова</span>
+                  <a class="feedback__citation-link" href="#">@misssssiskras</a>
+                </cite>
+              </blockquote>
+            </li>
+          </ul>
+          <div class="feedback__slider-buttons">
+            <button type="button" class="feedback__slider-button" aria-label="Показать прошлый отзыв">
+              <img class="feedback__slider-image" href="https://via.placeholder.com/35x35" aria-hidden="true">
+            </button>
+            <button type="button" class="feedback__slider-button" aria-label="Показать следующий отзыв">
+              <img class="feedback__slider-image" href="https://via.placeholder.com/35x35" aria-hidden="true">
+            </button>
+          </div>
+          <a class="feedback__link" href="#">Написать</a>
+        </div>
+      </section>
+      <section class="contact-us">
+        <h3 class="contact-us__title">Контакты</h3>
+        <div class="contact-us__info">
+          <ul class="contact-us__info-list info-list">
+            <li class="info-list__item">
+              <p class="info-list__text">e-mail:</p>
+              <a class="info-list__mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </li>
+            <li class="info-list__item">
+              <p class="info-list__text">адрес:</p>
+              <p class="info-list__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-us__map-container">
+          <img class="contact-us__map" src="https://via.placeholder.com/322x457" alt="Карта проезда к нашему офису">
+        </div>
+        <a class="contact-us__link" href="#">Напишите нам</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__social">
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" aria-label="Перейти в наш инстаграм"><img class="social-list__link-icon" src="https://via.placeholder.com/35x35" aria-hidden="true"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" aria-label="Перейти в наш фейсбук"><img class="social-list__link-icon" src="https://via.placeholder.com/35x35" aria-hidden="true"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" aria-label="Перейти в наш твиттер"><img class="social-list__link-icon" src="https://via.placeholder.com/35x35" aria-hidden="true"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <p class="page-footer__copyright-text">Разработано</p>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на страницу интерактивных курсов HTML Academy">
+          <svg class="page-footer__copyright-img" xmlns="http://www.w3.org/2000/svg" width="114" height="40" viewBox="0 0 113 39"><path d="M46.84 28.22a2.07 2.07 0 00.58-.11v1.4a3.41 3.41 0 01-1.24.22 1.75 1.75 0 01-1.75-1 5.08 5.08 0 01-3.3 1.13c-1.59 0-3.06-.87-3.06-2.68 0-2.24 2.08-2.93 3.9-2.93a11.63 11.63 0 012.28.26v-.31c0-1.09-.8-1.86-2.3-1.86a7.79 7.79 0 00-3.15.67v-1.79a10.72 10.72 0 013.35-.58c2.48 0 4 1.18 4 3.83v3.14a.57.57 0 00.69.61zm-6.76-1.19a1.42 1.42 0 001.64 1.29 3.56 3.56 0 002.53-1v-1.51a10.21 10.21 0 00-1.9-.22c-1.1.01-2.27.35-2.27 1.45zM53.06 20.62a5.29 5.29 0 012.7.67v1.79a4.28 4.28 0 00-2.42-.73 2.89 2.89 0 100 5.76 5.26 5.26 0 002.55-.67v1.8a6.58 6.58 0 01-2.9.6 4.42 4.42 0 01-4.72-4.54 4.54 4.54 0 014.79-4.68zM65.84 28.22a2.07 2.07 0 00.58-.11v1.4a3.41 3.41 0 01-1.24.22 1.75 1.75 0 01-1.75-1 5.08 5.08 0 01-3.3 1.13c-1.59 0-3.06-.87-3.06-2.68 0-2.24 2.08-2.93 3.9-2.93a11.63 11.63 0 012.28.26v-.31c0-1.09-.8-1.86-2.3-1.86a7.79 7.79 0 00-3.15.67v-1.79a10.72 10.72 0 013.35-.58c2.48 0 4 1.18 4 3.83v3.14a.57.57 0 00.69.61zm-6.76-1.19a1.42 1.42 0 001.64 1.29 3.56 3.56 0 002.53-1v-1.51a10.21 10.21 0 00-1.9-.22c-1.11.01-2.27.35-2.27 1.45zM76.67 16.85v12.76h-1.76v-1.39a4.07 4.07 0 01-3.35 1.62 4.62 4.62 0 010-9.22 4 4 0 013.15 1.37v-5.14h2zm-4.76 5.48a2.9 2.9 0 000 5.8 3 3 0 002.79-1.84v-2.13a3.06 3.06 0 00-2.79-1.83zM82.99 20.62c3.48 0 4.68 2.81 4.12 5.34h-6.58c.22 1.57 1.75 2.22 3.35 2.22a6.41 6.41 0 002.77-.62v1.68a7.5 7.5 0 01-3.14.6c-2.68 0-5-1.53-5-4.61a4.39 4.39 0 014.48-4.61zm.09 1.62a2.39 2.39 0 00-2.57 2.26h4.85a2.06 2.06 0 00-2.28-2.26zM89.1 29.61v-8.75h1.73v1.09a4 4 0 012.92-1.33 3 3 0 012.73 1.4 4.33 4.33 0 013.06-1.4 3.21 3.21 0 013.32 3.52v5.47h-2V24.2a1.67 1.67 0 00-1.73-1.84 2.94 2.94 0 00-2.17 1.18V29.61h-2V24.2a1.67 1.67 0 00-1.73-1.84 3.11 3.11 0 00-2.32 1.35v5.91h-2zM111.47 20.86h2l-4.1 9.93c-.95 2.28-2.19 3-3.52 3a5 5 0 01-1.15-.15v-1.66a3 3 0 00.89.13c.95 0 1.66-.67 2.17-2l.18-.44-4.16-8.82h2.13l3 6.6zM40.66 1.53v5a4 4 0 012.83-1.2A3.41 3.41 0 0147.1 8.9v5.41h-2V9.15a1.9 1.9 0 00-2-2.1 3.08 3.08 0 00-2.44 1.46v5.8h-2V1.53h2zM52.43 2.42v3.12h3.17v1.71h-3.17v4c0 1.15.53 1.53 1.66 1.53a4.71 4.71 0 001.77-.35v1.68a7.14 7.14 0 01-2.35.38 2.68 2.68 0 01-3-2.88V7.23h-1.6V5.52h1.57V2.88zM58.1 14.29V5.54h1.73v1.09a4 4 0 012.92-1.33 3 3 0 012.73 1.4 4.33 4.33 0 013.06-1.4 3.21 3.21 0 013.32 3.52v5.47h-2V8.88a1.67 1.67 0 00-1.73-1.84 2.94 2.94 0 00-2.17 1.18V14.29h-2V8.88a1.67 1.67 0 00-1.73-1.84 3.11 3.11 0 00-2.32 1.35v5.91h-2zM74.72 1.52h1.95v12.76h-1.95zM15.44.02h-.16L0 1.62v28l15.28 9.09 15.28-9.09v-28zm13.12 28.45l-13.28 7.9L2 28.47V16.99l13.22 7.87v1.43l-9.07-5.4v1.38l9.11 5.47v1.46l-9.1-5.42v1.38l9.11 5.47 9.19-5.5V19.22l4.1-2.45v11.67zm0-13.16l-3.65 2.14-1.68 1-8-4.76v1.38l6.84 4.07h-.06l-.15.09-1 .57-5.64-3.36v1.38l4.45 2.65-1.05.7-3.36-2v1.38l2.21 1.3-2.25 1.35-13.16-7.82 13.17-7.92zm0-1.39L15.21 6.05l-13.2 7.86V3.41l13.28-1.39 13.28 1.39v10.51z"/></svg>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
