@@ -1,0 +1,93 @@
+.week-offer {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  color: #444444;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.week-offer__wrapper {
+  min-width: 260px;
+}
+
+.qualities-list__item {
+  display: flex;
+  border-bottom: 1px solid rgba(192,192,192,0.5);
+}
+
+.qualities-list__info {
+  min-width: 67px;
+}
+
+.qualities-list__info + .qualities-list__info {
+  margin-left: 30px;
+}
+
+.week-offer__title {
+  width: 246px;
+  min-height: 50px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.week-offer__title-label {
+  width: 133px;
+  height: 16px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #63d1bb;
+}
+
+.week-offer__text {
+  line-height: 24px;
+  color: #444444;
+  margin-top: 30px;
+}
+
+.qualities-list {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.qualities-list__info {
+  line-height: 20px;
+  padding: 15px 0;
+}
+
+.week-offer__image-container {
+  display: flex;
+}
+
+.week-offer__price {
+  display: flex;
+  justify-content: center;
+  width: 125px;
+  line-height: 24px;
+  color: #444444;
+  margin: 30px auto;
+}
+
+.week-offer__link {
+  display: block;
+  line-height: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: #444444;
+  border: solid 2px #444444;
+  padding: 15px 85px;
+}
+
+.week-offer__link:hover,
+.week-offer__link:focus {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.week-offer__link:active {
+  color: rgba(255,255,255,0.3);
+}
