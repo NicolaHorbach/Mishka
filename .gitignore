@@ -7,11 +7,9 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-gulpfile.js
-*.json
 design/
 node_modules
 *.psd
 *.jpg
-*.css
-!source/img/*.jpg
+*.map
+style.css
