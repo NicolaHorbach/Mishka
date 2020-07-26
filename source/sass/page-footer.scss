@@ -11,38 +11,6 @@
   padding: 26px 90px;
 }
 
-.social-list {
-  display: flex;
-}
-
-.social-list__item {
-  display: flex;
-  align-items: center;
-  max-height: 28px;
-}
-
-.social-list__item + .social-list__item {
-  margin-left: 40px;
-}
-
-.social-list__link {
-  display: flex;
-}
-
-.social-list__link-icon {
-  fill: #231F20;
-}
-
-.social-list__link-icon:hover,
-.social-list__link-icon:focus {
-  fill: #46c1ae;
-}
-
-.social-list__link-icon:active {
-  fill: #46c1ae;
-  fill-opacity: 0.3;
-}
-
 .page-footer__copyright {
   display: flex;
   align-items: center;
