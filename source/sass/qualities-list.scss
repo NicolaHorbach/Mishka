@@ -1,0 +1,22 @@
+.qualities-list__item {
+  display: flex;
+  border-bottom: 1px solid rgba(192,192,192,0.5);
+}
+
+.qualities-list__info {
+  min-width: 67px;
+}
+
+.qualities-list__info + .qualities-list__info {
+  margin-left: 30px;
+}
+
+.qualities-list {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.qualities-list__info {
+  line-height: 20px;
+  padding: 15px 0;
+}
