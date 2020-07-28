@@ -1,4 +1,16 @@
 .burger-button {
-  position: relative;
-  right: 30px;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+
+  background: url("/images/burger-button.svg");
+  background-repeat: no-repeat;
+  border: none;
+
+  width: 20px;
+  height: 20px;
+}
+
+.burger-button.is-active {
+  background: url("/images/burger-button-close.svg");
 }
