@@ -11,4 +11,5 @@ design/
 node_modules
 *.psd
 source/css/*.css
+source/css/*.css.map
 !source/css/normalize.css
