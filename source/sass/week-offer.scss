@@ -1,19 +1,13 @@
 .week-offer {
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 260px;
   color: #444444;
   margin: 0 auto;
-  margin-top: 35px;
-}
-
-.week-offer__wrapper {
-  min-width: 260px;
+  padding: 35px 0;
 }
 
 .week-offer__title {
-  width: 246px;
-  min-height: 50px;
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
@@ -41,14 +35,18 @@
 .week-offer__price {
   display: flex;
   justify-content: center;
-  width: 125px;
+
   line-height: 24px;
   color: #444444;
+
+  width: 125px;
   margin: 30px auto;
 }
 
 .week-offer__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+
   line-height: 17px;
   line-height: 20px;
   font-weight: 700;
