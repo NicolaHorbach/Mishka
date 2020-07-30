@@ -1,25 +1,21 @@
 .contact-us {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 30px;
-  box-sizing: border-box;
+  padding-top: 45px;
+  padding-bottom: 40px;
 }
 
-.contact-us__title {
-  align-self: start;
-  font-size: 18px;
-  line-height: 30px;
-  margin-top: 45px;
+.contact-us__body {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contact-us__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
 }
 
 .contact-us__title + .contact-us__info {
-  margin-top: 40px;
-}
-
-.contact-us__info + .contact-us__map-container {
   margin-top: 40px;
 }
 
@@ -28,23 +24,25 @@
 }
 
 .contact-us__map-container::after {
-  content: url("/images/map-pin.svg");
+  content: url("../images/map-pin.svg");
   position: absolute;
-  right: 675px;
-  top: 3505px;
+  right: 115px;
+  top: 445px;
 }
 
 .contact-us__link {
   display: block;
+  border: 2px solid #444444;
+  margin-top: 40px;
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 14px 50px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   color: #444444;
   text-transform: uppercase;
-  box-sizing: border-box;
-  border: 2px solid #444444;
-  padding: 14px 50px;
-  margin: 40px 0;
 }
 
 .contact-us__link:hover,
