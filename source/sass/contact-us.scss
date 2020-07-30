@@ -4,7 +4,6 @@
   align-items: center;
   width: 320px;
   margin: 0 auto;
-  margin-top: 95px;
   padding: 0 30px;
   box-sizing: border-box;
 }
@@ -13,7 +12,7 @@
   align-self: start;
   font-size: 18px;
   line-height: 30px;
-  margin: 0;
+  margin-top: 45px;
 }
 
 .contact-us__title + .contact-us__info {
@@ -29,7 +28,7 @@
 }
 
 .contact-us__map-container::after {
-  content: url(/images/map-pin-svg.svg);
+  content: url("/images/map-pin.svg");
   position: absolute;
   right: 675px;
   top: 3505px;
