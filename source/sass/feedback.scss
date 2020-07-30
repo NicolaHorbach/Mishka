@@ -1,15 +1,13 @@
 .feedback {
-  display: flex;
-  flex-direction: column;
-
   box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
-  margin-top: 60px;
   padding: 0 30px;
+  padding-top: 60px;
+  // Как лучше делать в таком случае? Если разные отступы. Вот так или на элементы их вешать?
 }
 
-.feedback__list-item.hidden {
+.feedback__list-item.is-hidden {
   display: none;
 }
 
@@ -61,19 +59,18 @@
 }
 
 .feedback__link {
-  display: block;
-  box-sizing: border-box;
+  display: flex;
 
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  text-align: center;
   color: #444444;
   text-transform: uppercase;
 
   margin-top: 35px;
-  padding: 20px 80px;
-  border: 1px solid #000000;
+  margin-bottom: 45px;
+  padding: 15px 80px;
+  border: 2px solid #000000;
 }
 
 .feedback__link:hover,
