@@ -1,15 +1,14 @@
 .hero {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  padding-top: 75px;
 
   background-image: url("/images/hero-mobile-crop.png");
   background-position: top;
   background-repeat: no-repeat;
+}
 
+.hero__body {
   width: 320px;
   margin: 0 auto;
-  padding-top: 75px;
 }
 
 .hero__title {
@@ -19,6 +18,8 @@
 
   width: 244px;
   margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__menu-item {
