@@ -1,23 +1,19 @@
-.page-footer {
+.page-footer__body {
   width: 320px;
-  background-color: #f1f1f1;
   margin: 0 auto;
-}
 
-.page-footer__social {
-  padding: 26px 90px;
+  background-color: #f1f1f1;
 }
 
 .page-footer__copyright {
   display: flex;
-  // align-items: center;
-  // Создается впечатление, что даже флекс не везде нужен, не говоря уже про выравнивание
   padding: 22px 68px;
 }
 
 .page-footer__copyright-link {
   display: flex;
   align-items: center;
+
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
@@ -34,8 +30,9 @@
 }
 
 .page-footer__copyright-img {
-  fill: #63d1bb;
   margin-left: 30px;
+
+  fill: #63d1bb;
 }
 
 .page-footer__copyright-link:hover .page-footer__copyright-img,
