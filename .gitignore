@@ -10,6 +10,6 @@ Thumbs.db
 design/
 node_modules
 *.psd
-*.map
-*.css
-!normalize.css
+source/css/*.css
+source/css/*.css.map
+!source/css/normalize.css
