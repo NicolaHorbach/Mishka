@@ -1,21 +1,26 @@
 .week-offer {
-  display: flex;
-  flex-direction: column;
-  width: 260px;
-  color: #444444;
-  margin: 0 auto;
   padding: 35px 0;
 }
 
+.week-offer__body {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  margin: 0 auto;
+
+  color: #444444;
+}
+
 .week-offer__title {
+  display: flex;
+  flex-wrap: wrap;
+
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
 }
 
 .week-offer__title-label {
-  width: 133px;
-  height: 16px;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
@@ -23,38 +28,41 @@
 }
 
 .week-offer__text {
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  font-size: 15px;
   line-height: 24px;
   color: #444444;
-  margin-top: 30px;
 }
 
 .week-offer__image-container {
   display: flex;
+  margin-top: 30px;
 }
 
 .week-offer__price {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 
   line-height: 24px;
   color: #444444;
-
-  width: 125px;
-  margin: 30px auto;
+  text-align: center;
 }
 
 .week-offer__link {
   display: flex;
   justify-content: center;
+  border: solid 2px #444444;
+  padding: 15px 85px;
 
   line-height: 17px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
-
   color: #444444;
-  border: solid 2px #444444;
-  padding: 15px 85px;
 }
 
 .week-offer__link:hover,
