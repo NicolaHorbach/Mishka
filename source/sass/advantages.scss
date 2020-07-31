@@ -1,0 +1,35 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 75px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.advantages__title {
+  margin-bottom: 30px;
+}
+
+.advantages__image-wrapper {
+  display: flex;
+}
+
+.advantages__image-wrapper + .advantages__text {
+  margin-top: 25px;
+}
+
+.advantages__text {
+  display: flex;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+}
+
+.advantages__list-item + .advantages__list-item {
+  margin-top: 25px;
+}
