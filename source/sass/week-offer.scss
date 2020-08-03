@@ -4,7 +4,6 @@
 
 .week-offer__body {
   display: flex;
-  flex-direction: column;
   width: 260px;
   margin: 0 auto;
 
@@ -56,12 +55,14 @@
   display: flex;
   justify-content: center;
   border: solid 2px #444444;
-  padding: 15px 85px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   line-height: 17px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
   color: #444444;
 }
 
@@ -72,5 +73,5 @@
 }
 
 .week-offer__link:active {
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
