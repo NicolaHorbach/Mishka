@@ -11,7 +11,7 @@
   padding-right: 30px;
 }
 
-.feedback__list-item.is-hidden {
+.feedback__slide.is-hidden {
   display: none;
 }
 
@@ -19,11 +19,11 @@
   margin-top: 35px;
 }
 
-.feedback__list + .feedback__slider-buttons {
+.feedback__slides + .feedback__slider-buttons {
   margin-top: 35px;
 }
 
-.feedback__citation {
+.feedback__citation-text {
   color: #444444;
   margin-bottom: 40px;
 }
@@ -53,7 +53,7 @@
 }
 
 .feedback__citation-link:active {
-  color: rgba(70,193,174,0.3);
+  color: rgba(70, 193, 174, 0.3);
 }
 
 .feedback__slider-buttons {
@@ -69,8 +69,10 @@
 
 .feedback__link {
   display: flex;
+  justify-content: center;
   margin-top: 35px;
-  padding: 15px 80px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border: 2px solid #000000;
 
   font-size: 18px;
@@ -88,5 +90,5 @@
 }
 
 .feedback__link:active {
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
