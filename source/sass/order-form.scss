@@ -12,12 +12,11 @@
 }
 
 .order-form__description {
+  margin-bottom: 30px;
+
   font-size: 13px;
   line-height: 24px;
   color: #444444;
-
-  margin-bottom: 30px;
-  width: 240px;
 }
 
 .order-form__form {
@@ -29,9 +28,6 @@
   display: flex;
   flex-direction: column;
   border: none;
-
-  margin: 0;
-  padding: 0;
 }
 
 .order-form__legend {
@@ -46,19 +42,21 @@
 }
 
 .order-form__title {
+  display: flex;
+  align-items: center;
+
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
-  max-width: 150px;
 }
 
 .order-form__label {
+  margin-bottom: 10px;
+
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   color: #63d1bb;
-
-  margin-bottom: 10px;
 }
 
 .order-form__input-field,
@@ -82,9 +80,11 @@
 
 .order-form__item {
   position: relative;
+
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 .order-form__icon {
@@ -93,21 +93,52 @@
   top: 40px;
 }
 
-.order-form__item {
-  margin-top: 25px;
+.order-form__input-checkbox + .order-form__title::before,
+.order-form__input-radio + .order-form__title::before {
+  content: "";
+
+  min-width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 2px solid #444444;
+  margin-right: 25px;
 }
 
-.order-form__input-checkbox + .order-form__title {
-  margin-left: 25px;
+.order-form__input-checkbox:checked + .order-form__title::before {
+  background-image: url("../images/tick-mobile-svg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.order-form__input-radio + .order-form__title::before {
+  border-radius: 50%;
+}
+
+.order-form__input-radio:checked + .order-form__title::before {
+  background-image: url("../images/round-checkbox-pin-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.order-form__input-checkbox:hover + .order-form__title::before,
+.order-form__input-checkbox:focus + .order-form__title::before,
+.order-form__input-radio:hover + .order-form__title::before,
+.order-form__input-radio:focus + .order-form__title::before {
+  border-color: #62d1ba;
+}
+
+.order-form__input-checkbox:active + .order-form__title::before,
+.order-form__input-radio:active + .order-form__title::before {
+  border-color: rgba(68, 68, 68, 0.3);
 }
 
 .order-form__note {
-  font-size: 16px;
-  line-height: 16px;
-  color: #444444;
-
   margin: 0;
   margin-top: 18px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
 }
 
 .order-form__note + .order-form__submit-button {

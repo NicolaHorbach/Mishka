@@ -39,8 +39,23 @@ blockquote {
   margin: 0;
 }
 
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
 button {
   padding: 0;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  position: absolute;
+  left: --99999px;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .visually-hidden {
