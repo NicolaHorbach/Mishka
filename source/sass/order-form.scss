@@ -29,6 +29,8 @@
 }
 
 .order-form__legend {
+  margin-bottom: 25px;
+
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
@@ -48,7 +50,8 @@
   font-weight: 700;
 }
 
-.order-form__label {
+.order-form__label,
+.order-form__heading {
   margin-bottom: 10px;
 
   font-size: 17px;
@@ -57,23 +60,8 @@
   color: #63d1bb;
 }
 
-.order-form__input-field,
-.order-form__textarea {
-  padding: 18px 0;
-  width: 260px;
-  border: none;
-  box-shadow: inset 0px -2px 0 0 #000000;
-  box-sizing: border-box;
-
-  font-size: 17px;
-  line-height: 18px;
-  color: rgba(68,68,68,0.3);
-}
-
-.order-form__textarea {
-  padding: 18px;
-  border: 2px solid #000000;
-  box-shadow: none
+.order-form__heading {
+  margin-top: 10px;
 }
 
 .order-form__item {
@@ -82,13 +70,14 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.order-form__item + .order-form__item {
   margin-top: 25px;
 }
 
-.order-form__icon {
-  position: absolute;
-  left: 225px;
-  top: 40px;
+.order-form__fieldset + .order-form__item {
+  margin-top: 25px;
 }
 
 .order-form__input-checkbox + .order-form__title,
@@ -112,7 +101,7 @@
 }
 
 .order-form__input-checkbox:checked + .order-form__title::before {
-  background-image: url("../images/tick-mobile-svg.svg");
+  background-image: url("../images/tick-mobile.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -144,6 +133,53 @@
 .order-form__input-checkbox:active + .order-form__title::before,
 .order-form__input-radio:active + .order-form__title::before {
   border-color: rgba(68, 68, 68, 0.3);
+}
+
+.order-form__input-field,
+.order-form__textarea {
+  padding: 15px 0;
+  width: 260px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  box-sizing: border-box;
+
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba( 68, 68, 68, 0.3);
+}
+
+.order-form__textarea {
+  padding: 18px;
+  margin-top: 15px;
+  border: 2px solid #000000;
+  box-shadow: none
+}
+
+.order-form__item:hover .order-form__input-fielв,
+.order-form__item:hover .order-form__input-field,
+.order-form__item:hover .order-form__textarea,
+.order-form__item:hover .order-form__textarea {
+  border-color: #62d1ba;
+}
+
+.order-form__input-field:active,
+.order-form__textarea:active {
+  color: rgba( 68, 68, 68, 1);
+}
+
+.order-form__icon {
+  position: absolute;
+  left: 225px;
+  top: 50px;
+
+  fill: #000000;
+  fill-opacity: 0.2;
+}
+
+.order-form__item:hover .order-form__icon,
+.order-form__item:focus .order-form__icon {
+  fill: #62d1ba;
+  fill-opacity: 1;
 }
 
 .order-form__note {
