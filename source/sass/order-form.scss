@@ -25,8 +25,6 @@
 }
 
 .order-form__fieldset {
-  display: flex;
-  flex-direction: column;
   border: none;
 }
 
@@ -93,15 +91,24 @@
   top: 40px;
 }
 
+.order-form__input-checkbox + .order-form__title,
+.order-form__input-radio + .order-form__title {
+  min-height: 40px;
+  margin-left: 65px;
+}
+
 .order-form__input-checkbox + .order-form__title::before,
 .order-form__input-radio + .order-form__title::before {
   content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 
-  min-width: 40px;
+  width: 40px;
   height: 40px;
   box-sizing: border-box;
   border: 2px solid #444444;
-  margin-right: 25px;
 }
 
 .order-form__input-checkbox:checked + .order-form__title::before {
@@ -114,10 +121,17 @@
   border-radius: 50%;
 }
 
-.order-form__input-radio:checked + .order-form__title::before {
-  background-image: url("../images/round-checkbox-pin-2.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.order-form__input-radio:checked + .order-form__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #62d1ba;
 }
 
 .order-form__input-checkbox:hover + .order-form__title::before,
@@ -133,7 +147,6 @@
 }
 
 .order-form__note {
-  margin: 0;
   margin-top: 18px;
 
   font-size: 14px;
