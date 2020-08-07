@@ -1,0 +1,44 @@
+.contact-us {
+  padding-top: 45px;
+  padding-bottom: 40px;
+
+  // Width limiting and positioning:
+  &__body {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  // Text content wrapper:
+  &__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+  }
+
+  // Offset between text blocks:
+  &__title + &__info {
+    margin-top: 40px;
+  }
+
+  // Image container:
+  &__map-container {
+    position: relative;
+    display: flex;
+
+    // Map pin location:
+    &::after {
+      content: url("../images/map-pin.svg");
+      position: absolute;
+      right: 115px;
+      top: 145px;
+    }
+  }
+
+  // Control container:
+  &__control {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+}

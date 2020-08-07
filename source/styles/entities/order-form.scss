@@ -1,0 +1,77 @@
+.order-form {
+  padding-top: 30px;
+  padding-bottom: 55px;
+
+  // Width limiting and positioning
+  &__body {
+    width: 320px;
+    padding: 0 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+
+  &__description {
+    margin-bottom: 30px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #444444;
+  }
+
+  // Styles for fieldset:
+  &__fieldset {
+    border: none;
+
+    // Indents between 2 fieldsets:
+    & + & {
+      margin-top: 35px;
+    }
+  }
+
+  // Styles for fieldset name:
+  &__legend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #63d1bb;
+
+    // Draw color line after fieldset name:
+    &::after {
+      content: '';
+      height: 1px;
+      margin-left: 25px;
+      flex-grow: 1;
+      background-color: #63d1bb;
+    }
+  }
+
+  // Element container:
+  &__item {
+
+    // Offset between 2 item:
+    & + & {
+      margin-top: 25px;
+    }
+  }
+
+  // Offset between fieldset and item:
+  &__fieldset + &__item {
+    margin-top: 25px;
+  }
+
+  // Text styles for user hint:
+  &__note {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #444444;
+  }
+
+  // Offset between user hint and form button:
+  &__note + &__control {
+    margin-top: 30px;
+  }
+}

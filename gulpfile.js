@@ -7,7 +7,7 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
 gulp.task("css", function() {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src("source/styles/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -25,7 +25,7 @@ gulp.task("server", function() {
     cors: true,
     ui: false
   });
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("source/styles/**/**/*.scss", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 

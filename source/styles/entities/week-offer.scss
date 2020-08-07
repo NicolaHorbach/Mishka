@@ -1,0 +1,54 @@
+.week-offer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  // Width limiting and positioning:
+  &__body {
+    display: flex;
+    width: 260px;
+    margin: 0 auto;
+    color: #444444;
+  }
+
+  // Block title styling:
+  &__title {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  // Change size and color settings for label:
+  &__title-label {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #63d1bb;
+  }
+
+  // Main block text styling and positioning:
+  &__text {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+  }
+
+  &__image-container {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  // Price styles:
+  &__price {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 24px;
+    color: #444444;
+    text-align: center;
+  }
+}
