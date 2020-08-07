@@ -2,6 +2,7 @@
   display: block;
   width: 100%;
 
+  // Fancy styles for text:
   &__text {
     display: flex;
     align-items: center;
@@ -11,10 +12,12 @@
     font-weight: 700;
   }
 
+  // Custom field container:
   &__object-container {
     position: relative;
   }
 
+  // General styles for fields:
   &__object {
     box-sizing: border-box;
     width: 100%;
@@ -29,6 +32,7 @@
     }
   }
 
+  // Cusnom styles for input field group:
   &--type--input &__object {
     padding: 15px 0;
     border-top: none;
@@ -37,19 +41,21 @@
     border-bottom-width: 2px;
   }
 
+  // Custom styles for textarea group:
   &--type--textarea &__object {
     min-height: 140px;
     padding: 18px;
     margin-top: 15px;
     border-width: 2px;
-    box-shadow: none;
     resize: vertical;
   }
 
+  // Color theme for text:
   &---theme--highlighted &__text {
     padding-top: 5px;
     color: #63d1bb;
 
+    // Draw color line after ighlighted text:
     &::after {
       content: '';
       height: 1px;
@@ -59,6 +65,7 @@
     }
   }
 
+  // Set position of icons in input fields:
   &__icon {
     position: absolute;
     right: 5px;
@@ -69,11 +76,13 @@
     pointer-events: none;
   }
 
+  // Change custom input border color on component hover and focus:
   &:hover &__object,
   &:focus &__object {
     border-color: #62d1ba;
   }
 
+   // Change custom icon color on component hover and focus:
   &:hover &__icon,
   &:focus &__icon {
     fill: #62d1ba;
