@@ -1,242 +1,92 @@
-// Current CSS Length: 241 rows
 .order-form {
   padding-top: 30px;
   padding-bottom: 55px;
-}
 
-.order-form__body {
-  width: 320px;
-  padding: 0 30px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-}
+  &__body {
+    width: 320px;
+    padding: 0 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
 
-.order-form__description {
-  margin-bottom: 30px;
+  &__description {
+    margin-bottom: 30px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #444444;
+  }
 
-  font-size: 13px;
-  line-height: 24px;
-  color: #444444;
-}
+  &__fieldset {
+    border: none;
 
-.order-form__form {
-  display: flex;
-  flex-direction: column;
-}
+    & + & {
+      margin-top: 35px;
+    }
+  }
 
-.order-form__fieldset {
-  border: none;
-}
+  &__legend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #63d1bb;
 
-.order-form__legend {
-  margin-bottom: 25px;
+    &::after {
+      content: '';
+      height: 1px;
+      margin-left: 25px;
+      flex-grow: 1;
+      background-color: #63d1bb;
+    }
+  }
 
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #63d1bb;
-}
+  &__item {
 
-.order-form__fieldset + .order-form__fieldset {
-  margin-top: 35px;
-}
+    & + & {
+      margin-top: 25px;
+    }
+  }
 
-.order-form__title {
-  position: relative;
-  display: flex;
-  align-items: center;
-  font-size: 17px;
-  line-height: 24px; /* 1.4 */
-  font-weight: 700;
-}
+  &__fieldset + &__item {
+    margin-top: 25px;
+  }
 
-.order-form__label,
-.order-form__heading {
-  margin-bottom: 10px;
+  &__note {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #444444;
+  }
 
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #63d1bb;
-}
+  &__note + &__submit-button {
+    margin-top: 30px;
+  }
 
-.order-form__heading {
-  margin-top: 10px;
-}
+  &__submit-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid #444444;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #444444;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #ffffff;
 
-.order-form__item {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
+    &:hover,
+    &:focus {
+      background-color: #444444;
+      color: #ffffff;
+    }
 
-.order-form__item + .order-form__item {
-  margin-top: 25px;
-}
-
-.order-form__fieldset + .order-form__item {
-  margin-top: 25px;
-}
-
-.order-form__input-container {
-  position: relative;
-}
-
-.order-form__input-checkbox {
-  position: absolute;
-  left: -99999px;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.order-form__input-checkbox + .order-form__title,
-.order-form__input-radio + .order-form__title {
-  min-height: 40px;
-  padding-left: 65px;
-}
-
-.order-form__input-checkbox + .order-form__title::before,
-.order-form__input-radio + .order-form__title::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-
-  width: 40px;
-  height: 40px;
-  box-sizing: border-box;
-  border: 2px solid #444444;
-}
-
-.order-form__input-checkbox:checked + .order-form__title::before {
-  background-image: url("../images/tick-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.order-form__input-radio + .order-form__title::before {
-  border-radius: 50%;
-}
-
-.order-form__input-radio:checked + .order-form__title::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: #62d1ba;
-}
-
-.order-form__input-checkbox:hover + .order-form__title::before,
-.order-form__input-checkbox:focus + .order-form__title::before,
-.order-form__input-radio:hover + .order-form__title::before,
-.order-form__input-radio:focus + .order-form__title::before {
-  border-color: #62d1ba;
-}
-
-.order-form__input-checkbox:active + .order-form__title::before,
-.order-form__input-radio:active + .order-form__title::before {
-  border-color: rgba(68, 68, 68, 0.3);
-}
-
-
-.order-form__input-field,
-.order-form__textarea {
-  box-sizing: border-box;
-  width: 260px;
-  font-size: 17px;
-  line-height: 18px;
-  color: rgba( 68, 68, 68, 0.3);
-  border-color: #000;
-  border-style: solid;
-}
-
-.order-form__input-field {
-  padding: 15px 0;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom-width: 2px;
-}
-
-.order-form__textarea {
-  padding: 18px;
-  margin-top: 15px;
-  border-width: 2px;
-  box-shadow: none;
-  resize: vertical;
-}
-
-.order-form__item:focus .order-form__input-field,
-.order-form__item:hover .order-form__input-field,
-.order-form__item:focus .order-form__textarea,
-.order-form__item:hover .order-form__textarea {
-  border-color: #62d1ba;
-}
-
-.order-form__input-field:active,
-.order-form__textarea:active {
-  color: rgba( 68, 68, 68, 1);
-}
-
-.order-form__icon {
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  fill: #000000;
-  fill-opacity: 0.2;
-  pointer-events: none;
-}
-
-.order-form__item:hover .order-form__icon,
-.order-form__item:focus .order-form__icon {
-  fill: #62d1ba;
-  fill-opacity: 1;
-}
-
-.order-form__note {
-  margin-top: 18px;
-
-  font-size: 14px;
-  line-height: 16px;
-  color: #444444;
-}
-
-.order-form__note + .order-form__submit-button {
-  margin-top: 30px;
-}
-
-.order-form__submit-button {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border: 2px solid #444444;
-
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: 700;
-  color: #444444;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #ffffff;
-}
-
-.order-form__submit-button:hover,
-.order-form__submit-button:focus {
-  background-color: #444444;
-  color: #ffffff;
-}
-
-.order-form__submit-button:active {
-  color: rgba(255,255,255,0.3);
+    &:active {
+      color: rgba(255,255,255,0.3);
+    }
+  }
 }
