@@ -21,17 +21,18 @@
     margin-top: 35px;
   }
 
-  // Hide next slide:
-  &__slide.is-hidden {
-    display: none;
+  &__slide {
+
+    // Hide slide on Is-hidden state
+    &.is-hidden {
+      display: none;
+    }
   }
 
-  // Slider buttons container:
   &__slider-buttons {
     display: flex;
   }
 
-  // Slider button settings:
   &__slider-button {
     display: flex;
     padding: 12px 40px;
@@ -47,43 +48,38 @@
     margin-left: auto;
   }
 
-  // Citation container:
-  &__citation {
+  &__citation-text {
+    color: #444444;
+    margin-bottom: 40px;
+  }
 
-    &-text {
-      color: #444444;
-      margin-bottom: 40px;
+  &__citation-cite {
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-word;
+  }
+
+  &__citation-author {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  &__citation-link {
+    font-size: 17px;
+    line-height: 30px;
+    color: #444444;
+
+    // Change text color on link hover and focus:
+    &:hover,
+    &:focus {
+      color: #46c1ae;
     }
 
-    // Citation block wrapper:
-    &__cite {
-      display: flex;
-      flex-wrap: wrap;
-      word-break: break-word;
-    }
-
-    &-author {
-      font-size: 17px;
-      line-height: 24px;
-      font-weight: 700;
-      font-style: normal;
-    }
-
-    &-link {
-      font-size: 17px;
-      line-height: 30px;
-      color: #444444;
-
-      // Change text color on link hover and focus:
-      &:hover,
-      &:focus {
-        color: #46c1ae;
-      }
-
-      // Change text color on link click:
-      &:active {
-        color: rgba(70, 193, 174, 0.3);
-      }
+    // Change text color on link click:
+    &:active {
+      color: rgba(70, 193, 174, 0.3);
     }
   }
 }

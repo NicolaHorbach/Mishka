@@ -4,7 +4,6 @@
 
   // Width limiting and positioning:
   &__body {
-    position: relative;
     width: 320px;
     margin: 0 auto;
   }
@@ -23,6 +22,7 @@
 
   // Image container:
   &__map-container {
+    position: relative;
     display: flex;
 
     // Map pin location:
@@ -30,7 +30,7 @@
       content: url("../images/map-pin.svg");
       position: absolute;
       right: 115px;
-      top: 445px;
+      top: 145px;
     }
   }
 

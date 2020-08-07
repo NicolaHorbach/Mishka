@@ -17,14 +17,14 @@
     font-size: 25px;
     font-weight: 700;
     line-height: 30px;
+  }
 
-    // Change size and color settings for label:
-    &-label {
-      font-size: 17px;
-      font-weight: 700;
-      line-height: 20px;
-      color: #63d1bb;
-    }
+  // Change size and color settings for label:
+  &__title-label {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #63d1bb;
   }
 
   // Main block text styling and positioning:
@@ -36,7 +36,6 @@
     color: #444444;
   }
 
-  // Map container:
   &__image-container {
     display: flex;
     margin-top: 30px;
