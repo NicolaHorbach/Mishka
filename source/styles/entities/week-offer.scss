@@ -1,77 +1,55 @@
 .week-offer {
-  padding: 35px 0;
-}
+  padding-top: 35px;
+  padding-bottom: 35px;
 
-.week-offer__body {
-  display: flex;
-  width: 260px;
-  margin: 0 auto;
+  // Width limiting and positioning:
+  &__body {
+    display: flex;
+    width: 260px;
+    margin: 0 auto;
+    color: #444444;
+  }
 
-  color: #444444;
-}
+  // Block title styling:
+  &__title {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
 
-.week-offer__title {
-  display: flex;
-  flex-wrap: wrap;
+    // Change size and color settings for label:
+    &-label {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #63d1bb;
+    }
+  }
 
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 30px;
-}
+  // Main block text styling and positioning:
+  &__text {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+  }
 
-.week-offer__title-label {
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 20px;
-  color: #63d1bb;
-}
+  // Map container:
+  &__image-container {
+    display: flex;
+    margin-top: 30px;
+  }
 
-.week-offer__text {
-  margin-top: 30px;
-  margin-bottom: 20px;
-
-  font-size: 15px;
-  line-height: 24px;
-  color: #444444;
-}
-
-.week-offer__image-container {
-  display: flex;
-  margin-top: 30px;
-}
-
-.week-offer__price {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-
-  line-height: 24px;
-  color: #444444;
-  text-align: center;
-}
-
-.week-offer__link {
-  display: flex;
-  justify-content: center;
-  border: solid 2px #444444;
-  padding-top: 15px;
-  padding-bottom: 15px;
-
-  line-height: 17px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  color: #444444;
-}
-
-.week-offer__link:hover,
-.week-offer__link:focus {
-  background-color: #444444;
-  color: #ffffff;
-}
-
-.week-offer__link:active {
-  color: rgba(255, 255, 255, 0.3);
+  // Price styles:
+  &__price {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 24px;
+    color: #444444;
+    text-align: center;
+  }
 }
