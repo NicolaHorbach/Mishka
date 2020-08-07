@@ -32,7 +32,7 @@
     }
   }
 
-  // Cusnom styles for input field group:
+  // Custom styles for input field:
   &--type--input &__object {
     padding: 15px 0;
     border-top: none;
@@ -41,7 +41,7 @@
     border-bottom-width: 2px;
   }
 
-  // Custom styles for textarea group:
+  // Custom styles for textarea:
   &--type--textarea &__object {
     min-height: 140px;
     padding: 18px;
@@ -55,7 +55,7 @@
     padding-top: 5px;
     color: #63d1bb;
 
-    // Draw color line after ighlighted text:
+    // Draw color line after highlighted text:
     &::after {
       content: '';
       height: 1px;
@@ -65,7 +65,7 @@
     }
   }
 
-  // Set position of icons in input fields:
+  // Set position of icon in input field:
   &__icon {
     position: absolute;
     right: 5px;
@@ -76,13 +76,13 @@
     pointer-events: none;
   }
 
-  // Change custom input border color on component hover and focus:
+  // Change input border color on component hover and focus:
   &:hover &__object,
   &:focus &__object {
     border-color: #62d1ba;
   }
 
-   // Change custom icon color on component hover and focus:
+  // Change icon fill color on component hover and focus:
   &:hover &__icon,
   &:focus &__icon {
     fill: #62d1ba;

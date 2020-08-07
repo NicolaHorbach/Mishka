@@ -11,7 +11,6 @@
     box-sizing: border-box;
   }
 
-  // Text styles for description:
   &__description {
     margin-bottom: 30px;
     font-size: 13px;
@@ -23,7 +22,7 @@
   &__fieldset {
     border: none;
 
-    // Indents between 2 fieldset:
+    // Indents between 2 fieldsets:
     & + & {
       margin-top: 35px;
     }
@@ -52,13 +51,13 @@
   // Element container:
   &__item {
 
-    // Indents between 2 item:
+    // Offset between 2 item:
     & + & {
       margin-top: 25px;
     }
   }
 
-  // Indents between fieldset and item:
+  // Offset between fieldset and item:
   &__fieldset + &__item {
     margin-top: 25px;
   }
