@@ -1,4 +1,3 @@
-// Custom control styles:
 .control {
   width: 100%;
   padding-top: 15px;
@@ -15,7 +14,7 @@
     text-transform: uppercase;
   }
 
-  // Change custom control background on component hover and focus:
+  // Change control background on component hover and focus:
   &:hover,
   &:focus {
     background-color: #444444;
@@ -27,7 +26,7 @@
     color: #ffffff;
   }
 
-  // Change custom control text color on component click:
+  // Change control text color on component click:
   &:active &__text {
     color: rgba(255, 255, 255, 0.3);
   }

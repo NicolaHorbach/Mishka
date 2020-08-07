@@ -71,7 +71,7 @@
     color: #444444;
   }
 
-  // Indents betwee user hint and form button:
+  // Offset between user hint and form button:
   &__note + &__control {
     margin-top: 30px;
   }
