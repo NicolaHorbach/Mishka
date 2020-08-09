@@ -15,6 +15,15 @@
     font-weight: 700;
     text-align: left;
     color: #000000;
+
+    &:hover,
+    &:focus {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   &__details {
@@ -68,15 +77,6 @@
   &__control:active &__icon {
     fill: #63d1bb;
     fill-opacity: 0.2;
-  }
-
-  &__link:hover,
-  &__link:focus {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  &__link:active {
-    color: rgba(0, 0, 0, 0.3);
   }
 
   &__body:hover,
