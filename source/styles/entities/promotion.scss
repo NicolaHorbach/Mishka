@@ -1,0 +1,94 @@
+.promotion {
+  padding-bottom: 60px;
+
+  // Draw gray outline on video block:
+  &__body {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ececec;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    padding: 25px 35px;
+  }
+
+  &__icon {
+    display: flex;
+    min-width: 32px;
+    margin-right: 25px;
+    fill: #63d1bb;
+
+  }
+
+  &__title {
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+  }
+
+  // Set control position, size and and transparency of background:
+  &__video-control {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 50%;
+    height: 50%;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 0;
+  }
+
+  &__video-icon {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__footer{
+    padding: 35px;
+  }
+
+  &__details {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #444444;
+  }
+
+  &__details + &__control {
+    margin-top: 30px;
+  }
+
+  // Increases weight of stroke on element hover and focus:
+  &__body:hover,
+  &__body:focus {
+    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  // Reduces weight of stroke on element click:
+  &__body:active {
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  // Increases control size on element hover and focus:
+  &__video-control:hover,
+  &__video-control:focus {
+    width: 60%;
+    height: 60%;
+  }
+
+  // Reduces control size on element click:
+  &__video-control:active {
+    width: 40%;
+    height: 40%;
+    opacity: 0.3;
+  }
+}

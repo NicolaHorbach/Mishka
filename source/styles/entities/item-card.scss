@@ -1,0 +1,92 @@
+.item-card {
+
+  &__image-wrapper {
+    display: flex;
+  }
+
+  // Draw gray outline on text block:
+  &__info {
+    padding: 30px;
+    border: 1px solid #ececee;
+  }
+
+  &__title {
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: 700;
+    text-align: left;
+    color: #000000;
+  }
+
+  &__details {
+    font-size: 13px;
+    line-height: 2.3;
+    color: #444444;
+
+    // Draw gray line after element:
+    &::after {
+      content: '';
+      display: block;
+      height: 1px;
+      margin-top: 25px;
+      margin-bottom: 20px;
+      flex-grow: 1;
+      background-color: #ececee;
+    }
+  }
+
+  &__footer {
+    display: flex;
+  }
+
+  &__price {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  &__icon {
+    fill: #cccccc;
+  }
+
+  // Chagne icon color on element hover and focus:
+  &__control:hover &__icon,
+  &__control:focus &__icon {
+    fill: #63d1bb;
+  }
+
+  // Change icon color on element click:
+  &__control:active &__icon{
+    fill: #63d1bb;
+    fill-opacity: 0.2;
+  }
+
+  // Change text color on element hover and focus:
+  &__link:hover &__title,
+  &__link:focus &__title {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  // Change text color on element click:
+  &__link:active &__title {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  // Increases weight of stroke on element hover and focus:
+  &__body:hover,
+  &__body:focus {
+    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  // Reduces weight of stroke on element click:
+  &__body:active {
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}

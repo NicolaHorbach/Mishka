@@ -26,6 +26,7 @@
     color: rgba( 68, 68, 68, 1);
     border-color: #000;
     border-style: solid;
+    -webkit-border-radius: 0;
 
     &::placeholder {
       color: rgba( 68, 68, 68, 0.3);
