@@ -4,7 +4,6 @@
     display: flex;
   }
 
-  // Draw gray outline on text block:
   &__info {
     padding: 30px;
     border: 1px solid #ececee;
@@ -20,7 +19,7 @@
 
   &__details {
     font-size: 13px;
-    line-height: 2.3;
+    line-height: 1.4;
     color: #444444;
 
     // Draw gray line after element:
@@ -56,36 +55,30 @@
     fill: #cccccc;
   }
 
-  // Chagne icon color on element hover and focus:
   &__control:hover &__icon,
   &__control:focus &__icon {
     fill: #63d1bb;
   }
 
-  // Change icon color on element click:
-  &__control:active &__icon{
+  &__control:active &__icon {
     fill: #63d1bb;
     fill-opacity: 0.2;
   }
 
-  // Change text color on element hover and focus:
   &__link:hover &__title,
   &__link:focus &__title {
     color: rgba(0, 0, 0, 0.6);
   }
 
-  // Change text color on element click:
   &__link:active &__title {
     color: rgba(0, 0, 0, 0.3);
   }
 
-  // Increases weight of stroke on element hover and focus:
   &__body:hover,
   &__body:focus {
     box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
-  // Reduces weight of stroke on element click:
   &__body:active {
     box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
