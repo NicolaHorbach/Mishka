@@ -36,6 +36,7 @@
 
   &__footer {
     display: flex;
+    align-items: center;
   }
 
   &__price {
@@ -69,12 +70,12 @@
     fill-opacity: 0.2;
   }
 
-  &__link:hover &__title,
-  &__link:focus &__title {
+  &__link:hover,
+  &__link:focus {
     color: rgba(0, 0, 0, 0.6);
   }
 
-  &__link:active &__title {
+  &__link:active {
     color: rgba(0, 0, 0, 0.3);
   }
 
