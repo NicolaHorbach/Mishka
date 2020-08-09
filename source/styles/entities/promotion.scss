@@ -14,12 +14,11 @@
     padding: 25px 35px;
   }
 
-  &__icon {
+  &__heading-icon {
     display: flex;
     min-width: 32px;
     margin-right: 25px;
     fill: #63d1bb;
-
   }
 
   &__title {
@@ -76,11 +75,11 @@
 
   &__video-control:hover,
   &__video-control:focus {
-    transform: scale(120%);
+    transform: scale(1.2) translate(-40%, -40%);
   }
 
   &__video-control:active {
-    transform: scale(80%);
+    transform: scale(0.8) translate(-60%, -60%);
     opacity: 0.3;
   }
 }
