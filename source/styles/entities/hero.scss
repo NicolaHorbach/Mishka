@@ -1,77 +1,77 @@
 .hero {
   padding-top: 75px;
-
   background-image: url("../images/hero-mobile-crop.png");
   background-position: top;
   background-repeat: no-repeat;
-}
 
-.hero__body {
-  width: 320px;
-  margin: 0 auto;
-}
+  &__body {
+    width: 320px;
+    margin: 0 auto;
+  }
 
-.hero__title {
-  display: flex;
-  margin-bottom: 120px;
-  padding-left: 30px;
-  padding-right: 30px;
+  &__title {
+    display: flex;
+    margin-bottom: 120px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+    word-break: break-word;
+  }
 
-  font-size: 27px;
-  font-weight: 700;
-  text-align: center;
-  word-break: break-word;
-}
+  &__menu-item {
+    background-color: #63d1bb;
+  }
 
-.hero__menu-item {
-  background-color: #63d1bb;
-}
+  &__menu-item:nth-child(2) {
+    background-color: #56c3b2;
+  }
 
-.hero__menu-item:nth-child(2) {
-  background-color: #56c3b2;
-}
+  &__menu-link {
+    display: flex;
+    align-items: center;
+    padding: 22px 30px;
+    box-sizing: border-box;
 
-.hero__menu-link {
-  display: flex;
-  align-items: center;
-  padding: 22px 30px;
-  box-sizing: border-box;
-}
+    &:hover,
+    &:focus {
+      padding-bottom: 27px;
+    }
 
-.hero__menu-link:hover,
-.hero__menu-link:focus {
-  padding-bottom: 27px;
-}
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
-.hero__menu-item .hero__menu-link:hover,
-.hero__menu-item .hero__menu-link:focus{
-  background-color: #59d5bc;
-}
+  &__menu-text {
+    max-width: 175px;  /* отказ от <br>, нормальная максимальная ширина */
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    word-break: normal;
+  }
 
-.hero__menu-item:nth-child(2) .hero__menu-link:hover,
-.hero__menu-item:nth-child(2) .hero__menu-link:focus {
-  background-color: #46c1ae;
-}
+  // Offset between text blocks:
+  &__menu-text + &__menu-icon {
+    margin-left: auto;
+  }
 
-.hero__menu-link:active {
-  opacity: 0.3;
-}
+  &__menu-icon {
+    fill: rgba(20, 144, 128, 0.5);
+  }
 
-.hero__menu-text {
-  max-width: 175px;  /* отказ от <br>, нормальная максимальная ширина */
+  // Change first link background color on menu item focus and hover:
+  &__menu-item &__menu-link:hover,
+  &__menu-item &__menu-link:focus{
+    background-color: #59d5bc;
+  }
 
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #ffffff;
-  text-decoration: none;
-  word-break: normal;
-}
-
-.hero__menu-text + .hero__menu-icon {
-  margin-left: auto;
-}
-
-.hero__menu-icon {
-  fill: rgba(20, 144, 128, 0.5);
+  // Change second link background color on menu item focus and hover:
+  &__menu-item:nth-child(2) &__menu-link:hover,
+  &__menu-item:nth-child(2) &__menu-link:focus {
+    background-color: #46c1ae;
+  }
 }

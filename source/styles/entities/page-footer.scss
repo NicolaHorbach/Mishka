@@ -1,46 +1,53 @@
-.page-footer__body {
-  width: 320px;
-  margin: 0 auto;
+.page-footer {
 
-  background-color: #f1f1f1;
-}
+  &__body {
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f1f1f1;
+  }
 
-.page-footer__copyright {
-  display: flex;
-  padding: 22px 68px;
-}
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
 
-.page-footer__copyright-link {
-  display: flex;
-  align-items: center;
+  &__copyright-link {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #000000;
 
-  font-size: 19px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #000000;
-}
+    &:hover,
+    &:focus {
+      color: rgba(0, 0, 0, 0.6);
+    }
 
-.page-footer__copyright-link:hover,
-.page-footer__copyright-link:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
 
-.page-footer__copyright-link:active {
-  color: rgba(0, 0, 0, 0.3);
-}
+  &__copyright-img {
+    margin-left: 30px;
+    fill: #63d1bb;
+  }
 
-.page-footer__copyright-img {
-  margin-left: 30px;
+  // Change image fill color on link focus and hover:
+  &__copyright-link:hover &__copyright-img,
+  &__copyright-link:focus &__copyright-img {
+    fill: #46c1ae;
+  }
 
-  fill: #63d1bb;
-}
-
-.page-footer__copyright-link:hover .page-footer__copyright-img,
-.page-footer__copyright-link:focus .page-footer__copyright-img {
-  fill: #46c1ae;
-}
-
-.page-footer__copyright-link:active .page-footer__copyright-img {
-  fill: #46c1ae;
-  fill-opacity: 0.3;
+  // Change image fill opacity color on link click:
+  &__copyright-link:active &__copyright-img {
+    fill: #46c1ae;
+    fill-opacity: 0.3;
+  }
 }

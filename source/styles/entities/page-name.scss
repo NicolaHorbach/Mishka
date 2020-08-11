@@ -1,14 +1,16 @@
-.page-name__text {
-  display: flex;
-  justify-content: center;
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 75px;
-  padding-bottom: 80px;
+.page-name {
 
-  font-size: 27px;
-  font-weight: 700;
-  line-height: 30px;
-  background-color: #f1f1f1;
+  &__text {
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 75px;
+    padding-bottom: 80px;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 30px;
+    background-color: #f1f1f1;
+  }
 }
