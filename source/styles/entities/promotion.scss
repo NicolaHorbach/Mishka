@@ -75,11 +75,13 @@
 
   &__video-control:hover,
   &__video-control:focus {
-    transform: scale(1.2) translate(-40%, -40%);
+    transform: scale(1.2) translate(-50%, -50%);
+    transform-origin: left top;
   }
 
   &__video-control:active {
-    transform: scale(0.8) translate(-60%, -60%);
+    transform: scale(0.8) translate(-50%, -50%);
+    transform-origin: left top;
     opacity: 0.3;
   }
 }
