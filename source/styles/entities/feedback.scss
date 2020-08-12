@@ -35,9 +35,17 @@
 
   &__slider-button {
     display: flex;
-    padding: 12px 40px;
+    padding: 12px 39px;
     background-color: transparent;
     border: 1px solid #ececec;
+
+    & + & {
+      border-left: none;
+    }
+  }
+
+  &__slider-image {
+    fill: #000000;
   }
 
   // Link positioning and width limit:
@@ -81,5 +89,16 @@
     &:active {
       color: rgba(70, 193, 174, 0.3);
     }
+  }
+
+  // Change arrow fill color opacity on button hover and focus:
+  &__slider-button:hover &__slider-image,
+  &__slider-button:focus &__slider-image {
+    fill-opacity: 0.6;
+  }
+
+  // Change arrow fill color opacity on button click:
+  &__slider-button:active &__slider-image {
+    fill-opacity: 0.3;
   }
 }
