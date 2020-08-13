@@ -1,21 +1,26 @@
 .page-header {
 
   &__body {
+    position: relative;
     width: 320px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  &__top-bar {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding-top: 22px;
-    padding-bottom: 22px;
-  }
+  // &__top-bar {
+  //   position: relative;
+  //   display: flex;
+  //   justify-content: center;
+  //   padding-top: 22px;
+  //   padding-bottom: 22px;
+  // }
 
   &__logo {
     width: 80px;
+    margin: 0 auto;
+    padding-top: 22px;
+    padding-bottom: 22px;
+
 
     &:hover,
     &:focus {
@@ -38,5 +43,70 @@
     display: flex;
     width: 20px;
     height: 20px;
+  }
+
+  &__info {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+
+    &__body {
+      width: 772px;
+      box-sizing: border-box;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__logo {
+      position: absolute;
+      top: 50%;
+      left: 50px;
+      transform: translateY(-95%);
+      z-index: 3;
+
+      margin: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &__info {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 50px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #444444;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .page-header {
+
+    &__body {
+      width: 1150px;
+    }
+
+    &__logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-45%, -90%);
+      width: 149px;
+    }
+
+    &__logo-img {
+      width: 149px;
+      height: 72px;
+    }
   }
 }

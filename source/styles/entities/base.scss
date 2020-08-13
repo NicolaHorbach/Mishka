@@ -50,6 +50,10 @@ button {
   padding: 0;
 }
 
+picture {
+  display: flex;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);

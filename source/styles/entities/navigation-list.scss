@@ -12,6 +12,10 @@
     box-sizing: border-box;
     padding: 30px 0;
     box-shadow: 0px 1px 0 0 #ececec, inset 0px 1px 0 0 #ececec;
+
+    &[data-desktop-only="true"] {
+      display: none;
+    }
   }
 
   &__link {
@@ -57,3 +61,114 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+
+  .navigation-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      position: relative;
+      box-shadow: none;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      min-width: 80px;
+
+      &:nth-child(1) {
+        order: 3;
+        padding-top: 22px;
+        padding-bottom: 0;
+      }
+
+      &:nth-child(2) {
+        order: 4;
+        padding-top: 22px;
+        padding-bottom: 0;
+        margin-left: 35px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 320px;
+        box-shadow: 1px 0 0 0 #ececec, inset 1px 0 0 0 #ececec;
+      }
+
+      &:nth-child(4) {
+        padding-left: 80px;
+      }
+    }
+
+    &__link {
+      position: unset;
+    }
+
+    &__text {
+      padding-left: 0;
+      max-width: 181px;
+
+      &[data-tablet-size="true"] {
+        font-size: 15px;
+      }
+
+      &[data-mobile-only="true"] {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .navigation-list {
+
+    &__item {
+      display: flex;
+      padding-top: 31px;
+      padding-bottom: 31px;
+
+      &:nth-child(1) {
+        order: -1;
+        padding-top: 31px;
+        padding-bottom: 31px;
+        padding-right: 35px;
+        border-right: 1px solid #ececec;
+      }
+
+      &:nth-child(2) {
+        order: 0;
+        padding-top: 31px;
+        padding-bottom: 31px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 334px;
+      }
+
+      &:nth-child(5) {
+        padding-bottom: 0;
+      }
+
+      &:nth-child(6) {
+        margin-left: 60px;
+        padding-bottom: 0;
+      }
+
+      &[data-desktop-only="true"] {
+        display: block;
+        font-size: 15px;
+      }
+    }
+
+    &__text {
+
+      &[data-tablet-size="true"] {
+        font-size: 17px;
+      }
+
+      &[data-desktop-size="true"] {
+        font-size: 15px;
+      }
+    }
+  }
+}

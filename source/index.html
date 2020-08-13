@@ -10,7 +10,7 @@
   <body>
     <header class="page-header">
       <div class="page-header__body">
-        <div class="page-header__top-bar">
+        <!-- <div class="page-header__top-bar"> -->
           <div class="page-header__logo">
             <a class="page-header__logo-link" href="#" aria-label="Перейти на главную страницу">
               <picture>
@@ -23,23 +23,23 @@
           <div class="page-header__toggle">
             <button class="toggle is-toggled" type="button"></button>
           </div>
-        </div>
+        <!-- </div> -->
         <nav class="page-header__navigation">
           <ul class="navigation-list is-opened">
             <li class="navigation-list__item">
               <a class="navigation-list__link" href="catalog.html">
-                <span class="navigation-list__text">Каталог товаров</span>
+                <span class="navigation-list__text" data-tablet-size="true">Каталог товаров</span>
               </a>
             </li>
             <li class="navigation-list__item">
               <a class="navigation-list__link" href="form.html">
-                <span class="navigation-list__text">Вязание на заказ</span>
+                <span class="navigation-list__text" data-tablet-size="true">Вязание на заказ</span>
               </a>
             </li>
             <li class="navigation-list__item">
               <a class="navigation-list__link" href="#">
                 <svg class="navigation-list__icon" xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="-0.8 -0.8 17.6 17.6" aria-hidden="true"><path d="M16.47 14.93l-3.42-3.42a7.7 7.7 0 10-1.54 1.54l3.42 3.42c.2.2.42.33.77.33.6 0 1.1-.5 1.1-1.1 0-.24-.06-.5-.33-.77zM1.4 6.9a5.5 5.5 0 1111 0 5.5 5.5 0 01-11 0z"/></svg>
-                <span class="navigation-list__text">Поиск по сайту</span>
+                <span class="navigation-list__text" data-mobile-only="true">Поиск по сайту</span>
               </a>
             </li>
             <li class="navigation-list__item">
@@ -48,8 +48,19 @@
                 <span class="navigation-list__text">Корзина:&nbsp;пока&nbsp;пуста</span>
               </a>
             </li>
+            <li class="navigation-list__item" data-desktop-only="true">
+              <a class="navigation-list__link" href="#">
+                <span class="navigation-list__text navigation-list__text-small" data-desktop-size="true">Новые поступления</span>
+              </a>
+            </li>
+            <li class="navigation-list__item" data-desktop-only="true">
+              <a class="navigation-list__link" href="#">
+                <span class="navigation-list__text navigation-list__text-small" data-desktop-size="true">Распродажа</span>
+              </a>
+            </li>
           </ul>
         </nav>
+        <span class="page-header__info">Бесплатная доставка по России</span>
       </div>
     </header>
     <main class="page-main">
