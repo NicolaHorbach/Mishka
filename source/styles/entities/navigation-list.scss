@@ -1,10 +1,12 @@
 .navigation-list {
   display: none;
 
-  // Show block when class added:
   &.is-opened {
     display: block;
-    background-color: #ffffff;
+  }
+
+  &[data-show="desktop"] {
+    display: none;
   }
 
   &__item {
@@ -12,10 +14,6 @@
     box-sizing: border-box;
     padding: 30px 0;
     box-shadow: 0px 1px 0 0 #ececec, inset 0px 1px 0 0 #ececec;
-
-    &[data-desktop-only="true"] {
-      display: none;
-    }
   }
 
   &__link {
@@ -65,6 +63,7 @@
 
   .navigation-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 
     &__item {
@@ -73,18 +72,35 @@
       padding-top: 32px;
       padding-bottom: 32px;
       min-width: 80px;
+    }
 
-      &[data-set="without-tablet"] {
-        display: none;
-      }
+    &[data-order="1"] {
+      order: 2;
+    }
 
-      &:nth-child(3) {
-        margin-left: auto;
-        border-left: 1px solid #ececec;
-        border-right: 1px solid #ececec;
-      }
+    &[data-order="1"] &__item {
+      padding-top: 15px;
+      padding-bottom: 0;
+    }
 
-      &:nth-child(4) {
+    &[data-order="1"] &__item + &__item {
+      margin-left: 35px;
+    }
+
+    &[data-order="1"] &__text {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    &[data-order="2"] {
+      display: flex;
+      margin-left: auto;
+    }
+
+    &[data-order="2"] &__item {
+      border-left: 1px solid #ececec;
+
+      &:nth-child(2) {
         padding-left: 80px;
       }
     }
@@ -97,7 +113,7 @@
       padding-left: 0;
       max-width: 181px;
 
-      &[data-mobile-only="true"] {
+      &[data-show="mobile"] {
         display: none;
       }
     }
@@ -113,16 +129,40 @@
       display: flex;
       padding-top: 31px;
       padding-bottom: 31px;
+    }
 
-      &[data-set="without-tablet"] {
-        display: flex;
-      }
+    &[data-order="1"] {
+      order: -1;
+    }
+
+    &[data-order="1"] &__item {
+      padding-top: 31px;
+      padding-bottom: 31px;
 
       &:nth-child(1) {
         padding-right: 35px;
-        margin-right: 35px;
         border-right: 1px solid #ececec;
       }
+    }
+
+    &[data-order="1"] &__text {
+      font-size: 17px;
+    }
+
+    &[data-show="desktop"] {
+      display: flex;
+    }
+
+    &[data-show="desktop"] &__item {
+      padding-bottom: 0;
+    }
+
+    &[data-show="desktop"] &__item + &__item {
+      margin-left: 60px;
+    }
+
+    &[data-show="desktop"] &__text {
+      font-size: 15px;
     }
   }
 }
