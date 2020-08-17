@@ -1,10 +1,12 @@
 .navigation-list {
   display: none;
 
+  // Show block when class added:
   &.is-opened {
     display: block;
   }
 
+  // Hide desktop only menu:
   &[data-show="desktop"] {
     display: none;
   }
@@ -18,8 +20,6 @@
 
   &__link {
     position: relative;
-    display: flex;
-    align-items: center;
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
@@ -37,6 +37,7 @@
 
   &__text {
     padding-left: 77px;
+    padding-right: 60px;
   }
 
   &__icon {
@@ -63,8 +64,6 @@
 
   .navigation-list {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 
     &__item {
       position: relative;
@@ -111,8 +110,10 @@
 
     &__text {
       padding-left: 0;
+      padding-right: 0;
       max-width: 181px;
 
+      // Hide mobile only text:
       &[data-show="mobile"] {
         display: none;
       }
@@ -126,7 +127,6 @@
   .navigation-list {
 
     &__item {
-      display: flex;
       padding-top: 31px;
       padding-bottom: 31px;
     }
@@ -149,6 +149,7 @@
       font-size: 17px;
     }
 
+    // Show desktop only menu:
     &[data-show="desktop"] {
       display: flex;
     }

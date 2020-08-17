@@ -6,12 +6,12 @@
     margin-right: auto;
   }
 
-  &__top {
+  &__top-bar {
     position: relative;
   }
 
   &__logo {
-    width: 80px;
+    width: 90px;
     margin: 0 auto;
     padding-top: 22px;
     padding-bottom: 22px;
@@ -26,7 +26,7 @@
     }
   }
 
-  &__logo-link {
+  &__link {
     display: flex;
   }
 
@@ -40,20 +40,13 @@
     height: 20px;
   }
 
-  &__info {
-    display: none;
-  }
-
-  &__footer {
-    display: none;
-  }
-
   &__text {
     display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
+
   .page-header {
 
     &__body {
@@ -66,7 +59,7 @@
       padding-right: 50px;
     }
 
-    &__top {
+    &__top-bar {
       display: flex;
     }
 
@@ -75,8 +68,7 @@
     }
 
     &__logo {
-      height: 100%;
-      width: 112px;
+      width: 115px;
     }
 
     &__logo-img {
@@ -106,12 +98,14 @@
       width: 1150px;
     }
 
-    &__top {
+    &__top-bar {
       margin-left: 75px;
     }
 
     &__logo {
-      width: 149px;
+      width: 150px;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     &__logo-img {
