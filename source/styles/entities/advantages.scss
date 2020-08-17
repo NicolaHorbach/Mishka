@@ -31,7 +31,7 @@
     color: #000000;
   }
 
-  // Offset between text blocks:
+  // Offset between list items:
   &__list-item + &__list-item {
     margin-top: 25px;
   }
