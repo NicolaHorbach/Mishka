@@ -1,19 +1,31 @@
 .hero {
-  padding-top: 75px;
   background-image: url("../images/hero-mobile-crop.png");
   background-position: top;
   background-repeat: no-repeat;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../images/hero-mobile@2x.png");
+    background-position: top center;
+    background-size: 165%;
+    background-repeat: no-repeat;
+  }
+
   &__body {
+    display: flex;
+    flex-direction: column;
     width: 320px;
+    min-height: 490px;
+    padding-top: 75px;
     margin: 0 auto;
+    box-sizing: border-box;
+    border-top: 1px solid #ececec;
   }
 
   &__title {
-    display: flex;
-    margin-bottom: 120px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-bottom: auto;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-sizing: border-box;
     font-size: 27px;
     font-weight: 700;
     text-align: center;
@@ -36,7 +48,7 @@
 
     &:hover,
     &:focus {
-      padding-bottom: 27px;
+      transform: translateY(-5px);
     }
 
     &:active {
@@ -79,36 +91,39 @@
 @media (min-width: $tablet-width) {
 
   .hero {
-    padding-top: 30px;
+    position: relative;
+    top: -40px;
+    z-index: 1;
     background-image: url("../images/hero-desktop.png");
-    background-position: top;
+    background-position: top center;
     background-repeat: no-repeat;
-    margin-top: -55px;
 
-    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    //   background-image: url("../images/hero-desktop@2x.png");
-    //   background-position: top;
-    //   background-repeat: no-repeat;
-    // }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../images/hero-desktop@2x.png");
+      background-position: top center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
 
     &__body {
       width: 772px;
-      margin-top: 125px;
+      min-height: 745px;
+      padding-top: 155px;
+      padding-left: 50px;
+      padding-right: 50px;
+      box-sizing: border-box;
     }
 
     &__title {
-      padding-left: 135px;
-      padding-right: 135px;
-      margin-bottom: 370px;
+      margin-bottom: auto;
+      padding: 0;
       font-size: 43px;
       line-height: 1.2;
     }
 
     &__menu {
       display: flex;
-      width: 86.5%;
-      margin-left: auto;
-      margin-right: auto;
+      width: 100%;
     }
 
     &__menu-item {
@@ -117,15 +132,6 @@
 
     &__menu-link {
       padding: 30px 35px;
-
-      &:hover,
-      &:focus {
-        padding-bottom: 35px;
-      }
-
-      &:focus {
-        padding-bottom: 35px;
-      }
     }
 
     &__menu-text {
@@ -138,21 +144,15 @@
 @media (min-width: $desktop-width) {
 
   .hero {
+    top: -55px;
 
     &__body {
       width: 1150px;
-      margin-top: 115px;
+      padding-top: 145px;
     }
 
     &__title {
-      padding-left: 265px;
-      padding-right: 265px;
-      margin-bottom: 354px;
       font-size: 53px;
-    }
-
-    &__menu {
-      width: 91.3%;
     }
   }
 }
