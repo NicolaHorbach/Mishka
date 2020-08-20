@@ -1,9 +1,10 @@
 .advantages {
-  padding-top: 75px;
+  padding-top: 35px;
+  padding-bottom: 60px;
 
   &__body {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     width: 320px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -17,10 +18,12 @@
 
   &__image-wrapper {
     display: flex;
+    align-items: center;
+    height: 40px;
   }
 
   &__image-wrapper + &__text {
-    margin-top: 25px;
+    margin-top: 20px;
   }
 
   &__text {
@@ -31,8 +34,71 @@
     color: #000000;
   }
 
+  &__list {
+
+    & + & {
+      margin-top: 25px;
+    }
+  }
+
   // Offset between list items:
   &__list-item + &__list-item {
     margin-top: 25px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .advantages {
+    padding-bottom: 90px;
+
+    &__body {
+      width: 768px;
+      padding-left: 50px;
+      padding-right: 90px;
+    }
+
+    &__title {
+      font-size: 43px;
+      line-height: 1.16;
+      margin-bottom: 40px;
+    }
+
+    &__info {
+      display: flex;
+    }
+
+    &__list {
+      max-width: 300px;
+
+      &:nth-child(2) {
+        margin-left: auto;
+      }
+
+      & + & {
+        margin-top: 0;
+      }
+    }
+
+    &__list-item + &__list-item {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .advantages {
+
+    &__body {
+      width: 1150px;
+      padding-left: 225px;
+      padding-right: 275px;
+    }
+
+    &__title {
+      font-size: 53px;
+      line-height: 1.08;
+    }
   }
 }
