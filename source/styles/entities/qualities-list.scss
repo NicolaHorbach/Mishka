@@ -1,21 +1,25 @@
-.qualities-list__item {
-  display: flex;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(192, 192, 192, 0.5);
-}
+.qualities-list {
+  width: 100%;
 
-.qualities-list__title {
-  display: flex;
-  width: 68px;
-  line-height: 20px;
-}
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.5);
+  }
 
-.qualities-list__text {
-  display: flex;
-  line-height: 20px;
-}
+  &__title {
+    display: flex;
+    width: 68px;
+    line-height: 20px;
+  }
 
-.qualities-list__title + .qualities-list__text {
-  margin-left: 30px;
+  &__text {
+    display: flex;
+    line-height: 20px;
+  }
+
+  &__title + &__text {
+    margin-left: 30px;
+  }
 }

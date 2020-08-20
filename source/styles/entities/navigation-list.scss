@@ -1,0 +1,169 @@
+.navigation-list {
+  display: none;
+
+  // Show block when class added:
+  &.is-opened {
+    display: block;
+  }
+
+  // Hide desktop only menu:
+  &[data-show="desktop"] {
+    display: none;
+  }
+
+  &__item {
+    display: flex;
+    box-sizing: border-box;
+    padding: 30px 0;
+    box-shadow: 0px 1px 0 0 #ececec, inset 0px 1px 0 0 #ececec;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000000;
+
+    &:hover,
+    &:focus {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__text {
+    padding-left: 77px;
+    padding-right: 60px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    fill: #cccccc;
+  }
+
+  // Change icon fill color on link hover and focus
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: #63d1bb;
+  }
+
+  // Change icon fill opacity on link click:
+  &__link:active &__icon {
+    fill-opacity: 0.2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .navigation-list {
+    display: flex;
+
+    &__item {
+      position: relative;
+      box-shadow: none;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      min-width: 80px;
+    }
+
+    &[data-order="1"] {
+      order: 2;
+    }
+
+    &[data-order="1"] &__item {
+      padding-top: 15px;
+      padding-bottom: 0;
+    }
+
+    &[data-order="1"] &__item + &__item {
+      margin-left: 35px;
+    }
+
+    &[data-order="1"] &__text {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    &[data-order="2"] {
+      display: flex;
+      margin-left: auto;
+    }
+
+    &[data-order="2"] &__item {
+      border-left: 1px solid #ececec;
+
+      &:nth-child(2) {
+        padding-left: 80px;
+      }
+    }
+
+    &__link {
+      position: static;
+    }
+
+    &__text {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 181px;
+
+      // Hide mobile only text:
+      &[data-show="mobile"] {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .navigation-list {
+
+    &__item {
+      padding-top: 31px;
+      padding-bottom: 31px;
+    }
+
+    &[data-order="1"] {
+      order: -1;
+    }
+
+    &[data-order="1"] &__item {
+      padding-top: 31px;
+      padding-bottom: 31px;
+
+      &:nth-child(1) {
+        padding-right: 35px;
+        border-right: 1px solid #ececec;
+      }
+    }
+
+    &[data-order="1"] &__text {
+      font-size: 17px;
+    }
+
+    // Show desktop only menu:
+    &[data-show="desktop"] {
+      display: flex;
+    }
+
+    &[data-show="desktop"] &__item {
+      padding-bottom: 0;
+    }
+
+    &[data-show="desktop"] &__item + &__item {
+      margin-left: 60px;
+    }
+
+    &[data-show="desktop"] &__text {
+      font-size: 15px;
+    }
+  }
+}

@@ -6,50 +6,70 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/toggle.js" async defer></script>
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__body">
         <div class="page-header__top-bar">
           <div class="page-header__logo">
-            <a class="page-header__logo-link" href="#" aria-label="Перейти на главную страницу">
-              <img class="page-header__logo-img" src="/images/mishka-logo.svg" alt="Mishka" width="86" height="35">
+            <a href="#" class="page-header__link">
+              <picture class="page-heager__logo-container">
+                <source media="(min-width: 1150px)" srcset="images/mishka-logo-desktop.png 1x, images/mishka-logo-desktop-@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="images/mishka-logo-tablet.png 1x, images/mishka-logo-tablet-@2x.png 2x">
+                <img class="page-header__logo-img" src="images/mishka-logo-mobile.png" srcset="images/mishka-logo-mobile-@2x.png 2x" alt="Логотип Mishka" width="86" height="35">
+              </picture>
             </a>
           </div>
-          <div class="page-header__burger-button">
-            <button class="burger-button" type="button"></button>
+          <div class="page-header__toggle">
+            <button class="toggle is-toggled" type="button"></button>
           </div>
         </div>
-        <ul class="page-header__menu-list">
-          <li class="page-header__menu-item">
-            <a class="page-header__menu-link" href="catalog.html">
-              <span class="page-header__menu-text">Каталог товаров</span>
+        <ul class="navigation-list is-opened" data-order="1">
+          <li class="navigation-list__item">
+            <a href="catalog.html" class="navigation-list__link">
+              <span class="navigation-list__text">Каталог товаров</span>
             </a>
           </li>
-          <li class="page-header__menu-item">
-            <a class="page-header__menu-link" href="form.html">
-              <span class="page-header__menu-text">Вязание на заказ</span>
-            </a>
-          </li>
-          <li class="page-header__menu-item">
-            <a class="page-header__menu-link" href="#">
-              <svg class="page-header__menu-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="-0.8 -0.8 17.6 17.6" aria-hidden="true"><path d="M16.47 14.93l-3.42-3.42a7.7 7.7 0 10-1.54 1.54l3.42 3.42c.2.2.42.33.77.33.6 0 1.1-.5 1.1-1.1 0-.24-.06-.5-.33-.77zM1.4 6.9a5.5 5.5 0 1111 0 5.5 5.5 0 01-11 0z"/></svg>
-              <span class="page-header__menu-text">Поиск по сайту</span>
-            </a>
-          </li>
-          <li class="page-header__menu-item">
-            <a class="page-header__menu-link" href="#">
-              <svg class="page-header__menu-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="264.2 370.96 20.29 18.85" aria-hidden="true"><path d="M283.75 378.19h-3.15l-3.4-6.81a.75.75 0 10-1.35.67l3.07 6.14h-9.14l3.08-6.14a.75.75 0 00-1.34-.67l-3.41 6.81h-3.15a.75.75 0 000 1.5h.15l.86 3a.74.74 0 00-.32.59c0 .4.31.7.7.74l1.66 5.79h12.7l1.65-5.8c.39-.02.7-.34.7-.73a.74.74 0 00-.32-.6l.86-3h.15a.75.75 0 100-1.49zm-4.18 10.12h-10.43l-1.23-4.28h12.88l-1.22 4.28zm1.65-5.78h-13.74l-.8-2.84h15.35l-.8 2.84z"/></svg>
-              <span class="page-header__menu-text">Корзина:&nbsp;пока&nbsp;пуста</span>
+          <li class="navigation-list__item">
+            <a href="form.html" class="navigation-list__link">
+              <span class="navigation-list__text">Вязание на заказ</span>
             </a>
           </li>
         </ul>
+        <ul class="navigation-list is-opened" data-order="2">
+          <li class="navigation-list__item">
+            <a href="#" class="navigation-list__link">
+              <svg class="navigation-list__icon" xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="-0.8 -0.8 17.6 17.6" aria-hidden="true"><path d="M16.47 14.93l-3.42-3.42a7.7 7.7 0 10-1.54 1.54l3.42 3.42c.2.2.42.33.77.33.6 0 1.1-.5 1.1-1.1 0-.24-.06-.5-.33-.77zM1.4 6.9a5.5 5.5 0 1111 0 5.5 5.5 0 01-11 0z"/></svg>
+              <span class="navigation-list__text" data-show="mobile">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="navigation-list__item">
+            <a href="#" class="navigation-list__link">
+              <svg class="navigation-list__icon" xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="264.2 370.96 20.29 18.85" aria-hidden="true"><path d="M283.75 378.19h-3.15l-3.4-6.81a.75.75 0 10-1.35.67l3.07 6.14h-9.14l3.08-6.14a.75.75 0 00-1.34-.67l-3.41 6.81h-3.15a.75.75 0 000 1.5h.15l.86 3a.74.74 0 00-.32.59c0 .4.31.7.7.74l1.66 5.79h12.7l1.65-5.8c.39-.02.7-.34.7-.73a.74.74 0 00-.32-.6l.86-3h.15a.75.75 0 100-1.49zm-4.18 10.12h-10.43l-1.23-4.28h12.88l-1.22 4.28zm1.65-5.78h-13.74l-.8-2.84h15.35l-.8 2.84z"/></svg>
+              <span class="navigation-list__text">Корзина:&nbsp;пока&nbsp;пуста</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="navigation-list" data-show="desktop">
+          <li class="navigation-list__item">
+            <a href="#" class="navigation-list__link">
+              <span class="navigation-list__text">Новые поступления</span>
+            </a>
+          </li>
+          <li class="navigation-list__item">
+            <a href="#" class="navigation-list__link">
+              <span class="navigation-list__text">Распродажа</span>
+            </a>
+          </li>
+        </ul>
+        <p class="page-header__text">Бесплатная доставка по России</p>
       </div>
     </header>
     <main class="page-main">
       <section class="hero">
         <div class="hero__body">
-          <h1 class="hero__title">Милые штучки ручной работы&nbsp;для&nbsp;дома</h1>
+          <h1 class="hero__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
           <ul class="hero__menu">
             <li class="hero__menu-item">
               <a class="hero__menu-link" href="#">
@@ -68,12 +88,14 @@
       </section>
       <section class="week-offer">
         <div class="week-offer__body">
-          <h2 class="week-offer__title visually-hidden">Товар недели – Вязаные корзинки</h2>
+          <h2 class="visually-hidden">Товар недели – Вязаные корзинки</h2>
+          <div class="week-offer__title-container">
+            <p class="week-offer__title">Вязаные&nbsp;корзинки
+              <span class="week-offer__title-label">ТОВАР НЕДЕЛИ</span>
+            </p>
+          </div>
           <div class="week-offer__wrapper">
             <div class="week-offer__info">
-              <p class="week-offer__title">Вязаные&nbsp;корзинки
-                <span class="week-offer__title-label">ТОВАР НЕДЕЛИ</span>
-              </p>
               <p class="week-offer__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
               <ul class="week-offer__qualities qualities-list">
                 <li class="qualities-list__item">
@@ -90,8 +112,12 @@
                 </li>
               </ul>
             </div>
-            <div class="week-offer__image-container">
-              <img class="week-offer__image" src="images/week-offer.png" alt="Разноцветные вязаные корзинки в руках" width="260px" height="315px">
+            <div class="week-offer__image-wrapper">
+              <picture>
+                  <source media="(min-width: 1150px)" srcset="images/week-offer-desktop.png 1x, images/week-offer-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="images/week-offer-tablet.png 1x, images/week-offer-tablet@2x.png 2x">
+                  <img class="week-offer__image" src="images/week-offer-mobile.png" srcset="week-offer-mobile@2x.png x2" alt="Разноцветные вязаные корзинки в руках" width="260px" height="315px">
+              </picture>
             </div>
             <p class="week-offer__price">Цена: 990 руб.</p>
             <div class="week-offer__control">
