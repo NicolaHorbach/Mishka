@@ -4,7 +4,6 @@
 
   // Width limiting and positioning:
   &__body {
-    display: flex;
     width: 260px;
     margin: 0 auto;
     color: #444444;
@@ -27,17 +26,19 @@
     color: #63d1bb;
   }
 
+  &__wrapper {
+    margin-top: 30px;
+  }
+
   // Main block text styling and positioning:
   &__text {
-    margin-top: 30px;
     margin-bottom: 20px;
     font-size: 15px;
     line-height: 24px;
     color: #444444;
   }
 
-  &__image-container {
-    display: flex;
+  &__image-wrapper {
     margin-top: 30px;
   }
 

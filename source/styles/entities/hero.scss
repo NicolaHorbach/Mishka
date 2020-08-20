@@ -7,7 +7,7 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../images/hero-mobile@2x.png");
     background-position: top center;
-    background-size: 165%;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 
@@ -168,15 +168,6 @@
     &__body {
       width: 1150px;
       padding-top: 145px;
-
-      // &::after {
-      //   content: none;
-      //   position: absolute;
-      //   left: 0;
-      //   right: 0;
-      //   background-image: url("../images/zigzag-desktop.svg");
-      //   background-repeat: repeat-x;
-      // }
     }
 
     &__title {
