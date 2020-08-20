@@ -4,7 +4,11 @@
   // Show block when class added:
   &.is-opened {
     display: block;
-    background-color: #ffffff;
+  }
+
+  // Hide desktop only menu:
+  &[data-show="desktop"] {
+    display: none;
   }
 
   &__item {
@@ -16,8 +20,6 @@
 
   &__link {
     position: relative;
-    display: flex;
-    align-items: center;
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
@@ -35,6 +37,7 @@
 
   &__text {
     padding-left: 77px;
+    padding-right: 60px;
   }
 
   &__icon {
@@ -57,3 +60,110 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+
+  .navigation-list {
+    display: flex;
+
+    &__item {
+      position: relative;
+      box-shadow: none;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      min-width: 80px;
+    }
+
+    &[data-order="1"] {
+      order: 2;
+    }
+
+    &[data-order="1"] &__item {
+      padding-top: 15px;
+      padding-bottom: 0;
+    }
+
+    &[data-order="1"] &__item + &__item {
+      margin-left: 35px;
+    }
+
+    &[data-order="1"] &__text {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    &[data-order="2"] {
+      display: flex;
+      margin-left: auto;
+    }
+
+    &[data-order="2"] &__item {
+      border-left: 1px solid #ececec;
+
+      &:nth-child(2) {
+        padding-left: 80px;
+      }
+    }
+
+    &__link {
+      position: static;
+    }
+
+    &__text {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 181px;
+
+      // Hide mobile only text:
+      &[data-show="mobile"] {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .navigation-list {
+
+    &__item {
+      padding-top: 31px;
+      padding-bottom: 31px;
+    }
+
+    &[data-order="1"] {
+      order: -1;
+    }
+
+    &[data-order="1"] &__item {
+      padding-top: 31px;
+      padding-bottom: 31px;
+
+      &:nth-child(1) {
+        padding-right: 35px;
+        border-right: 1px solid #ececec;
+      }
+    }
+
+    &[data-order="1"] &__text {
+      font-size: 17px;
+    }
+
+    // Show desktop only menu:
+    &[data-show="desktop"] {
+      display: flex;
+    }
+
+    &[data-show="desktop"] &__item {
+      padding-bottom: 0;
+    }
+
+    &[data-show="desktop"] &__item + &__item {
+      margin-left: 60px;
+    }
+
+    &[data-show="desktop"] &__text {
+      font-size: 15px;
+    }
+  }
+}
