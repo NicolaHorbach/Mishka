@@ -20,7 +20,6 @@
 
   &__mail {
     color: #444444;
-    width: 180px;
     margin-left: 30px;
     border-bottom: 1px solid #46c1ae;
 
@@ -32,6 +31,52 @@
    &:active {
       color: rgba(70,193,174,0.3);
       border-bottom-color: rgba(70,193,174,0.3);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .info-list {
+    display: flex;
+
+    &__item {
+
+      & + & {
+        margin-top: 0;
+        margin-left: 55px;
+      }
+    }
+
+    &__text {
+
+      & + & {
+        width: 225px;
+      }
+    }
+
+    &__mail {
+      height: fit-content;
+      font-size: 17px;
+    }
+
+    &__text {
+      font-size: 17px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .info-list {
+    flex-direction: column;
+
+    &__item {
+
+      & + & {
+        margin-left: 0;
+        margin-top: 55px;
+      }
     }
   }
 }
