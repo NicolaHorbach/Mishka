@@ -16,6 +16,11 @@
     margin-top: 35px;
   }
 
+  // Offset between slider elements:
+  &__slides + &__slider-buttons {
+    margin-top: 35px;
+  }
+
   &__slide {
 
     // Hide slide on Is-hidden state
@@ -26,7 +31,6 @@
 
   &__slider-buttons {
     display: flex;
-    margin-top: 35px;
   }
 
   &__slider-button {
@@ -96,85 +100,5 @@
   // Change arrow fill color opacity on button click:
   &__slider-button:active &__slider-image {
     fill-opacity: 0.3;
-  }
-}
-
-@media (min-width: $tablet-width) {
-
-  .feedback {
-    padding-top: 80px;
-
-    &__body {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 768px;
-      padding-top: 80px;
-      padding-bottom: 50px;
-      padding-left: 50px;
-      padding-right: 50px;
-      background-image: url('../images/feedback-bg.png');
-      background-position: top left;
-      background-repeat: no-repeat;
-    }
-
-    &__title {
-      font-size: 43px;
-      line-height: 1.16;
-      order: 1;
-    }
-
-    &__title + &__slider {
-      margin-top: 45px;
-    }
-
-    &__slider {
-      order: 3;
-    }
-
-    &__citation-text {
-      font-size: 17px;
-      line-height: 1.76;
-      margin-bottom: 60px;
-    }
-
-    &__citation-cite {
-      width: 40%;
-    }
-
-    &__slider-buttons {
-      display: flex;
-      width: 185px;
-      margin-left: auto;
-      margin-top: -53px;
-    }
-
-    &__slider-button {
-      border-color: transparent;
-      padding-right: 20px;
-      padding-left: 20px;
-    }
-
-    &__control {
-      align-self: center;
-      margin-top: 0;
-      width: 175px;
-      order: 2;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-
-  .feedback {
-
-    &__body {
-      width: 1150px;
-      padding-left: 175px;
-    }
-
-    &__citation {
-      padding-right: 150px;
-    }
   }
 }
