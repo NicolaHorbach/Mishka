@@ -3,8 +3,6 @@
   padding-bottom: 60px;
 
   &__body {
-    // display: flex;
-    // flex-direction: column;
     width: 320px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -13,6 +11,7 @@
   }
 
   &__title {
+    line-height: 1.4;
     margin-bottom: 30px;
   }
 
@@ -55,7 +54,7 @@
     &__body {
       width: 768px;
       padding-left: 50px;
-      padding-right: 90px;
+      padding-right: 50px;
     }
 
     &__title {
@@ -72,7 +71,7 @@
       max-width: 300px;
 
       &:nth-child(2) {
-        margin-left: auto;
+        margin-left: 25px;
       }
 
       & + & {
@@ -80,8 +79,11 @@
       }
     }
 
-    &__list-item + &__list-item {
+    &__list-item {
+
+      & + & {
       margin-top: 50px;
+      }
     }
   }
 }
@@ -92,11 +94,14 @@
 
     &__body {
       width: 1150px;
-      padding-left: 225px;
-      padding-right: 275px;
+    }
+
+    &__info {
+      justify-content: center;
     }
 
     &__title {
+      padding-left: 20%;
       font-size: 53px;
       line-height: 1.08;
     }
