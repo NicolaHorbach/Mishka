@@ -6,6 +6,7 @@
   &__body {
     width: 320px;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 
   // Text content wrapper:
@@ -30,7 +31,7 @@
       content: url("../images/map-pin.svg");
       position: absolute;
       right: 115px;
-      top: 145px;
+      top: 140px;
     }
   }
 
@@ -40,5 +41,114 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .contact-us {
+    padding-top: 75px;
+    padding-bottom: 55px;
+
+    &__body {
+      width: 768px;
+    }
+
+    &__wrapper {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 60px;
+    }
+
+    &__title {
+      position: relative;
+      font-size: 43px;
+      line-height: 1.2;
+
+      // Draw flag and sign his position:
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -15px;
+        height: 80px;
+        width: 50px;
+        background-image: url('../images/flag-svg.svg');
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__title + &__info {
+      margin-top: 65px;
+    }
+
+    &__map-container {
+
+      // Relocated map pin:
+      &::after {
+        right: 340px;
+      }
+    }
+
+    &__map {
+      width: 100%;
+    }
+
+    &__control {
+      width: 230px;
+      margin-top: 55px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .contact-us {
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 1150px;
+      height: 457px;
+      padding-right: 50px;
+      padding-left: 225px;
+    }
+
+    &__title {
+      font-size: 53px;
+      line-height: 1.1;
+
+      // Relocated flag:
+      &::after {
+        left: -115px;
+      }
+    }
+
+    &__wrapper {
+      padding-top: 80px;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      order: 1;
+    }
+
+    &__map-container {
+      width: 60%;
+      margin-left: auto;
+      order: 3;
+
+      // Relocated map pin:
+      &::after {
+        right: 220px;
+      }
+    }
+
+    &__control {
+      margin-top: auto;
+      margin-right: auto;
+      margin-left: 0;
+      order: 2;
+    }
   }
 }
