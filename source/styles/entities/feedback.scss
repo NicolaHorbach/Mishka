@@ -65,14 +65,14 @@
 
   &__citation-author {
     font-size: 17px;
-    line-height: 24px;
+    line-height: 1.4;
     font-weight: 700;
     font-style: normal;
   }
 
   &__citation-link {
     font-size: 17px;
-    line-height: 30px;
+    line-height: 1.4;
     color: #444444;
 
     // Change text color on link hover and focus:
@@ -135,7 +135,7 @@
 
     &__citation-text {
       font-size: 17px;
-      line-height: 1.76;
+      line-height: 1.4;
       margin-bottom: 60px;
     }
 
