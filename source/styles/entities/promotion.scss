@@ -9,8 +9,6 @@
   }
 
   &__heading {
-    display: flex;
-    align-items: center;
     padding: 25px 35px;
   }
 
@@ -62,6 +60,21 @@
 
   &__details + &__control {
     margin-top: 30px;
+  }
+
+  &__heading-link {
+    display: flex;
+    align-items: center;
+    color: #000000;
+
+    &:hover,
+    &:focus {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   &__body:hover,

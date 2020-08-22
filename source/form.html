@@ -13,7 +13,7 @@
       <div class="page-header__body">
         <div class="page-header__top-bar">
           <div class="page-header__logo">
-            <a href="index.html" class="page-header__link">
+            <a href="index.html" class="page-header__link" aria-label="Перейти на главную страницу">
               <picture class="page-heager__logo-container">
                 <source media="(min-width: 1150px)" srcset="images/mishka-logo-desktop.png 1x, images/mishka-logo-desktop-@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="images/mishka-logo-tablet.png 1x, images/mishka-logo-tablet-@2x.png 2x">
@@ -22,10 +22,10 @@
             </a>
           </div>
           <div class="page-header__toggle">
-            <button class="toggle is-toggled" type="button"></button>
+            <button class="toggle is-toggled" type="button" aria-label="Открыть/Закрыть выпадающее меню"></button>
           </div>
         </div>
-        <ul class="navigation-list is-opened" data-order="1">
+        <ul class="navigation-list is-opened" data-order="1" aria-label="Навигация по сайту">
           <li class="navigation-list__item">
             <a href="catalog.html" class="navigation-list__link">
               <span class="navigation-list__text">Каталог товаров</span>
@@ -37,7 +37,7 @@
             </a>
           </li>
         </ul>
-        <ul class="navigation-list is-opened" data-order="2">
+        <ul class="navigation-list is-opened" data-order="2" aria-label="Навигация по сайту">
           <li class="navigation-list__item">
             <a href="#" class="navigation-list__link">
               <svg class="navigation-list__icon" xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="-0.8 -0.8 17.6 17.6" aria-hidden="true"><path d="M16.47 14.93l-3.42-3.42a7.7 7.7 0 10-1.54 1.54l3.42 3.42c.2.2.42.33.77.33.6 0 1.1-.5 1.1-1.1 0-.24-.06-.5-.33-.77zM1.4 6.9a5.5 5.5 0 1111 0 5.5 5.5 0 01-11 0z"/></svg>
@@ -51,7 +51,7 @@
             </a>
           </li>
         </ul>
-        <ul class="navigation-list" data-show="desktop">
+        <ul class="navigation-list" data-show="desktop" aria-label="Навигация по сайту">
           <li class="navigation-list__item">
             <a href="#" class="navigation-list__link">
               <span class="navigation-list__text">Новые поступления</span>
@@ -159,7 +159,7 @@
                 <label class="labeled-field labeled-field--type--input">
                   <span class="labeled-field__text">Имя:</span>
                   <div class="labeled-field__object-container">
-                    <input class="labeled-field__object" type="text"  name="name" placeholder="Введите ваше имя *">
+                    <input class="labeled-field__object" type="text" name="name" placeholder="Введите ваше имя *">
                   </div>
                 </label>
               </div>
@@ -167,7 +167,7 @@
                 <label class="labeled-field labeled-field--type--input">
                   <span class="labeled-field__text">Фамилия:</span>
                   <div class="labeled-field__object-container">
-                    <input class="labeled-field__object" type="text"  name="surname" placeholder="Укажите фамилию *">
+                    <input class="labeled-field__object" type="text" name="surname" placeholder="Укажите фамилию *">
                   </div>
                 </label>
               </div>
@@ -175,7 +175,7 @@
                 <label class="labeled-field labeled-field--type--input">
                   <span class="labeled-field__text">Отчество:</span>
                   <div class="labeled-field__object-container">
-                    <input class="labeled-field__object" type="text"  name="fathers name" placeholder="Отчество, если желаете">
+                    <input class="labeled-field__object" type="text" name="fathers name" placeholder="Отчество, если желаете">
                   </div>
                 </label>
               </div>
@@ -184,7 +184,7 @@
               <label class="labeled-field labeled-field--type--input labeled-field---theme--highlighted">
                 <span class="labeled-field__text">ТЕЛ</span>
                 <div class="labeled-field__object-container">
-                  <input class="labeled-field__object" type="text"  name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                  <input class="labeled-field__object" type="text" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                   <svg class="labeled-field__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" aria-hidden="true"><path d="M17.32 24.33h-1.11c-4.9-.58-8.5-2.85-11.11-5.77A19.4 19.4 0 010 6.82V5.46c.1-.92.54-1.55 1.07-2.09.65-.66 1.63-1.52 2.52-1.55a3.2 3.2 0 012.23 1.07c.39.53.6 1.59.78 2.37.18.8.6 1.95.48 2.72-.17 1.2-1.76 1.7-2.23 2.57a16.65 16.65 0 007.47 8.35c.85-.47 1.6-1.87 2.77-1.9.43 0 .97.22 1.4.35.48.14.9.32 1.32.48.7.27 1.95.62 2.37 1.21.44.61.69 1.61.59 2.23-.2 1.24-2.23 2.6-3.45 3.06zm-4.8-22.8c5.96 0 10.78 4.82 10.78 10.77h1.53c0-6.8-5.5-12.3-12.3-12.3v1.53z"/><path d="M12.53 9.33v1.55c.78 0 1.42.63 1.42 1.42h1.55a2.97 2.97 0 00-2.97-2.97zm0-3.08a6.05 6.05 0 016.06 6.05h1.58a7.64 7.64 0 00-7.64-7.64v1.59z"/></svg>
                 </div>
               </label>
@@ -193,7 +193,7 @@
               <label class="labeled-field labeled-field--type--input labeled-field---theme--highlighted">
                 <span class="labeled-field__text">E-MAIL</span>
                 <div class="labeled-field__object-container">
-                  <input class="labeled-field__object" type="text"  name="email" placeholder="Ваш Email*">
+                  <input class="labeled-field__object" type="text" name="email" placeholder="Ваш Email*">
                   <svg class="labeled-field__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" aria-hidden="true"><path d="M28 5H4a4 4 0 00-4 4v13a4 4 0 004 4h24a4 4 0 004-4V9a4 4 0 00-4-4zM2 10.25l7 5.25-7 5.25v-10.5zM30 22a2 2 0 01-2 2H4a2 2 0 01-2-2l7.83-5.88 4.37 3.28a3.01 3.01 0 003.6 0l4.37-3.27L30 22zm0-1.25l-7-5.25 7-5.25v10.5zM17.2 18.6a1.98 1.98 0 01-2.4 0l-4.14-3.1-.83-.63L2 9c0-1.1.9-2 2-2h24a2 2 0 012 2l-12.8 9.6z"/></svg>
                 </div>
               </label>
@@ -236,8 +236,9 @@
           </li>
         </ul>
         <div class="page-footer__copyright">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на страницу интерактивных курсов HTML Academy">Разработано
-            <svg class="page-footer__copyright-img" xmlns="http://www.w3.org/2000/svg" width="27" height="34"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3h-.2L2 12.1v-9L13.5 2 25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7-4.2v1.4l5.8 3.5-.8.6-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.8 1-1.8 1.2L2 13.6l11.4-6.8zM1.9 15L13.3 22v1l-7.9-4.7v1.5l8 4.7v1.1l-8-4.7v1.4l8 4.8 8.2-4.8V17l3.4-2v10l-11.5 6.9-11.6-7v-9.8z"/></svg>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на страницу интерактивных курсов HTML Academy">
+            <span class="page-footer__copyright-text">Разработано</span>
+            <svg class="page-footer__copyright-img" xmlns="http://www.w3.org/2000/svg" width="27" height="34" aria-hidden="true"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3h-.2L2 12.1v-9L13.5 2 25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7-4.2v1.4l5.8 3.5-.8.6-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.8 1-1.8 1.2L2 13.6l11.4-6.8zM1.9 15L13.3 22v1l-7.9-4.7v1.5l8 4.7v1.1l-8-4.7v1.4l8 4.8 8.2-4.8V17l3.4-2v10l-11.5 6.9-11.6-7v-9.8z"/></svg>
           </a>
         </div>
       </div>
