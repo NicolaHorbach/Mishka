@@ -156,7 +156,7 @@
         margin-top: 0;
       }
 
-      &[data-width="100%"] {
+      &--textarea {
         width: 100%;
       }
     }
@@ -210,7 +210,7 @@
     &__wrapper {
       padding-left: 0;
 
-      &[data-direction-column="true"] {
+      &[data-flex-direction="column"] {
         display: flex;
         flex-direction: column;
       }

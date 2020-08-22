@@ -96,6 +96,7 @@
   .labeled-field {
 
     &--type--input {
+      position: relative;
       display: flex;
     }
 
@@ -103,6 +104,19 @@
       margin-right: 25px;
       min-width: 100px;
       font-size: 19px;
+
+      &--position--absolute {
+        position: absolute;
+        left: -180px;
+        top: 10px;
+      }
+    }
+
+    &--theme--highlighted &__text {
+
+      &::after {
+        content: none;
+      }
     }
 
     &__object-container {
@@ -114,18 +128,8 @@
       background-color: transparent;
     }
 
-    &--theme--highlighted {
+    &--type--textarea {
       position: relative;
-    }
-
-    &--theme--highlighted &__text {
-      position: absolute;
-      left: -180px;
-      top: 10px;
-
-      &::after {
-        content: none;
-      }
     }
 
     &--type--textarea &__object {
