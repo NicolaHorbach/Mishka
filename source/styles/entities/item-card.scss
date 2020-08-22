@@ -31,25 +31,31 @@
   }
 
   &__details {
+    margin-top: 15px;
     font-size: 13px;
     line-height: 1.4;
     color: #444444;
+  }
+
+  &__footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
 
     // Draw gray line after element:
-    &::after {
+     &::after {
       content: '';
-      display: block;
+      position: absolute;
+      top: -50px;
+      left: 0;
+      right: 0;
       height: 1px;
       margin-top: 25px;
       margin-bottom: 20px;
       flex-grow: 1;
       background-color: #ececee;
     }
-  }
-
-  &__footer {
-    display: flex;
-    align-items: center;
   }
 
   &__price {
@@ -90,5 +96,38 @@
 
   &__body:active {
     box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .item-card {
+
+    &__body {
+      display: flex;
+    }
+
+    &__image {
+      width: 335px;
+      height: 335px;
+    }
+
+    &__info {
+      width: 335px;
+      height: 335px;
+      box-sizing: border-box;
+    }
+
+    &__link {
+      font-size: 20px;
+    }
+
+    &__details {
+      font-size: 15px;
+    }
+
+    &__footer {
+      margin-top: 180px;
+    }
   }
 }
