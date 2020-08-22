@@ -77,140 +77,156 @@
           <form class="order-form__form">
             <fieldset class="order-form__fieldset">
               <legend class="order-form__legend">ТИП</legend>
-              <div class="order-form__item">
-                <label class="labeled-indicator labeled-indicator--type--radio">
-                  <span class="labeled-indicator__indicator">
-                    <input type="radio" name="type[]" value="accessory" class="labeled-indicator__object" checked=true>
-                    <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
-                  </span>
-                  <span class="labeled-indicator__text">Аксессуар для интерьера</span>
-                </label>
-              </div>
-              <div class="order-form__item">
-                <label class="labeled-indicator labeled-indicator--type--radio">
-                  <span class="labeled-indicator__indicator">
-                    <input type="radio" name="type[]" value="toy" class="labeled-indicator__object" checked=true>
-                    <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
-                  </span>
-                  <span class="labeled-indicator__text">Детская игрушка</span>
-                </label>
+              <div class="order-form__wrapper" data-direction-column="true">
+                <div class="order-form__item">
+                  <label class="labeled-indicator labeled-indicator--type--radio" tabindex="0">
+                    <span class="labeled-indicator__indicator">
+                      <input type="radio" name="type[]" value="accessory" class="labeled-indicator__object" checked=true>
+                      <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
+                    </span>
+                    <span class="labeled-indicator__text">Аксессуар для интерьера</span>
+                  </label>
+                </div>
+                <div class="order-form__item">
+                  <label class="labeled-indicator labeled-indicator--type--radio" tabindex="0">
+                    <span class="labeled-indicator__indicator">
+                      <input type="radio" name="type[]" value="toy" class="labeled-indicator__object" checked=true>
+                      <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
+                    </span>
+                    <span class="labeled-indicator__text">Детская игрушка</span>
+                  </label>
+                </div>
               </div>
             </fieldset>
             <fieldset class="order-form__fieldset">
               <legend class="order-form__legend">ЦВЕТ</legend>
-              <div class="order-form__item">
-                <label class="labeled-indicator labeled-indicator--type--checkbox">
-                  <span class="labeled-indicator__indicator">
-                    <input type="checkbox" name="color[]" value="white" class="labeled-indicator__object" checked>
-                    <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
-                  </span>
-                  <span class="labeled-indicator__text">Белый</span>
-                </label>
-              </div>
-              <div class="order-form__item">
-                <label class="labeled-indicator labeled-indicator--type--checkbox">
-                  <span class="labeled-indicator__indicator">
-                    <input type="checkbox" name="color[]" value="gray" class="labeled-indicator__object" checked>
-                    <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
-                  </span>
-                  <span class="labeled-indicator__text">Серый</span>
-                </label>
-              </div>
-              <div class="order-form__item">
-                <label class="labeled-indicator labeled-indicator--type--checkbox">
-                  <span class="labeled-indicator__indicator">
-                    <input type="checkbox" name="color[]" value="tiffany" class="labeled-indicator__object">
-                    <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
-                  </span>
-                  <span class="labeled-indicator__text">«Тиффани»</span>
-                </label>
-              </div>
-              <div class="order-form__item">
-                <label class="labeled-indicator labeled-indicator--type--checkbox">
-                  <span class="labeled-indicator__indicator">
-                    <input type="checkbox" name="color[]" value="black" class="labeled-indicator__object">
-                    <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
-                  </span>
-                  <span class="labeled-indicator__text">Черный</span>
-                </label>
-              </div>
-              <div class="order-form__item">
-                <label class="labeled-indicator labeled-indicator--type--checkbox">
-                  <span class="labeled-indicator__indicator">
-                    <input type="checkbox" name="color[]" value="pink" class="labeled-indicator__object">
-                    <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
-                  </span>
-                  <span class="labeled-indicator__text">Розовый</span>
-                </label>
-              </div>
-              <div class="order-form__item">
-                <label class="labeled-indicator labeled-indicator--type--checkbox">
-                  <span class="labeled-indicator__indicator">
-                    <input type="checkbox" name="color[]" value="orange" class="labeled-indicator__object">
-                    <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
-                  </span>
-                  <span class="labeled-indicator__text">Оранжевый</span>
-                </label>
+              <div class="order-form__wrapper">
+                <div class="order-form__item">
+                  <label class="labeled-indicator labeled-indicator--type--checkbox" tabindex="0">
+                    <span class="labeled-indicator__indicator">
+                      <input type="checkbox" name="color[]" value="white" class="labeled-indicator__object" checked>
+                      <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
+                    </span>
+                    <span class="labeled-indicator__text">Белый</span>
+                  </label>
+                </div>
+                <div class="order-form__item" data-offset-reset="tablet">
+                  <label class="labeled-indicator labeled-indicator--type--checkbox" tabindex="0">
+                    <span class="labeled-indicator__indicator">
+                      <input type="checkbox" name="color[]" value="gray" class="labeled-indicator__object" checked>
+                      <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
+                    </span>
+                    <span class="labeled-indicator__text">Серый</span>
+                  </label>
+                </div>
+                <div class="order-form__item" data-offset-reset="desktop">
+                  <label class="labeled-indicator labeled-indicator--type--checkbox" tabindex="0">
+                    <span class="labeled-indicator__indicator">
+                      <input type="checkbox" name="color[]" value="tiffany" class="labeled-indicator__object">
+                      <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
+                    </span>
+                    <span class="labeled-indicator__text">«Тиффани»</span>
+                  </label>
+                </div>
+                <div class="order-form__item">
+                  <label class="labeled-indicator labeled-indicator--type--checkbox" tabindex="0">
+                    <span class="labeled-indicator__indicator">
+                      <input type="checkbox" name="color[]" value="black" class="labeled-indicator__object">
+                      <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
+                    </span>
+                    <span class="labeled-indicator__text">Черный</span>
+                  </label>
+                </div>
+                <div class="order-form__item">
+                  <label class="labeled-indicator labeled-indicator--type--checkbox" tabindex="0">
+                    <span class="labeled-indicator__indicator">
+                      <input type="checkbox" name="color[]" value="pink" class="labeled-indicator__object">
+                      <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
+                    </span>
+                    <span class="labeled-indicator__text">Розовый</span>
+                  </label>
+                </div>
+                <div class="order-form__item">
+                  <label class="labeled-indicator labeled-indicator--type--checkbox" tabindex="0">
+                    <span class="labeled-indicator__indicator">
+                      <input type="checkbox" name="color[]" value="orange" class="labeled-indicator__object">
+                      <span class="labeled-indicator__custom-object" aria-hidden="true"></span>
+                    </span>
+                    <span class="labeled-indicator__text">Оранжевый</span>
+                  </label>
+                </div>
               </div>
             </fieldset>
             <fieldset class="order-form__fieldset">
               <legend class="order-form__legend">ФИО</legend>
-              <div class="order-form__item">
-                <label class="labeled-field labeled-field--type--input">
-                  <span class="labeled-field__text">Имя:</span>
-                  <div class="labeled-field__object-container">
-                    <input class="labeled-field__object" type="text"  name="name" placeholder="Введите ваше имя *">
-                  </div>
-                </label>
-              </div>
-              <div class="order-form__item">
-                <label class="labeled-field labeled-field--type--input">
-                  <span class="labeled-field__text">Фамилия:</span>
-                  <div class="labeled-field__object-container">
-                    <input class="labeled-field__object" type="text"  name="surname" placeholder="Укажите фамилию *">
-                  </div>
-                </label>
-              </div>
-              <div class="order-form__item">
-                <label class="labeled-field labeled-field--type--input">
-                  <span class="labeled-field__text">Отчество:</span>
-                  <div class="labeled-field__object-container">
-                    <input class="labeled-field__object" type="text"  name="fathers name" placeholder="Отчество, если желаете">
-                  </div>
-                </label>
+              <div class="order-form__wrapper" data-type="input">
+                <div class="order-form__item">
+                  <label class="labeled-field labeled-field--type--input">
+                    <span class="labeled-field__text">Имя:</span>
+                    <div class="labeled-field__object-container">
+                      <input class="labeled-field__object" type="text"  name="name" placeholder="Введите ваше имя *">
+                    </div>
+                  </label>
+                </div>
+                <div class="order-form__item">
+                  <label class="labeled-field labeled-field--type--input">
+                    <span class="labeled-field__text">Фамилия:</span>
+                    <div class="labeled-field__object-container">
+                      <input class="labeled-field__object" type="text"  name="surname" placeholder="Укажите фамилию *">
+                    </div>
+                  </label>
+                </div>
+                <div class="order-form__item">
+                  <label class="labeled-field labeled-field--type--input">
+                    <span class="labeled-field__text">Отчество:</span>
+                    <div class="labeled-field__object-container">
+                      <input class="labeled-field__object" type="text"  name="fathers name" placeholder="Отчество, если желаете">
+                    </div>
+                  </label>
+                </div>
               </div>
             </fieldset>
-            <div class="order-form__item">
-              <label class="labeled-field labeled-field--type--input labeled-field---theme--highlighted">
-                <span class="labeled-field__text">ТЕЛ</span>
-                <div class="labeled-field__object-container">
-                  <input class="labeled-field__object" type="text"  name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-                  <svg class="labeled-field__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" aria-hidden="true"><path d="M17.32 24.33h-1.11c-4.9-.58-8.5-2.85-11.11-5.77A19.4 19.4 0 010 6.82V5.46c.1-.92.54-1.55 1.07-2.09.65-.66 1.63-1.52 2.52-1.55a3.2 3.2 0 012.23 1.07c.39.53.6 1.59.78 2.37.18.8.6 1.95.48 2.72-.17 1.2-1.76 1.7-2.23 2.57a16.65 16.65 0 007.47 8.35c.85-.47 1.6-1.87 2.77-1.9.43 0 .97.22 1.4.35.48.14.9.32 1.32.48.7.27 1.95.62 2.37 1.21.44.61.69 1.61.59 2.23-.2 1.24-2.23 2.6-3.45 3.06zm-4.8-22.8c5.96 0 10.78 4.82 10.78 10.77h1.53c0-6.8-5.5-12.3-12.3-12.3v1.53z"/><path d="M12.53 9.33v1.55c.78 0 1.42.63 1.42 1.42h1.55a2.97 2.97 0 00-2.97-2.97zm0-3.08a6.05 6.05 0 016.06 6.05h1.58a7.64 7.64 0 00-7.64-7.64v1.59z"/></svg>
+            <div class="order-form__fake-fieldset" data-theme="light-grey">
+              <div class="order-form__wrapper" data-type="input">
+                <div class="order-form__item">
+                  <label class="labeled-field labeled-field--type--input labeled-field--theme--highlighted">
+                    <span class="labeled-field__text">ТЕЛ</span>
+                    <div class="labeled-field__object-container">
+                      <input class="labeled-field__object" type="text"  name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                      <svg class="labeled-field__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" aria-hidden="true"><path d="M17.32 24.33h-1.11c-4.9-.58-8.5-2.85-11.11-5.77A19.4 19.4 0 010 6.82V5.46c.1-.92.54-1.55 1.07-2.09.65-.66 1.63-1.52 2.52-1.55a3.2 3.2 0 012.23 1.07c.39.53.6 1.59.78 2.37.18.8.6 1.95.48 2.72-.17 1.2-1.76 1.7-2.23 2.57a16.65 16.65 0 007.47 8.35c.85-.47 1.6-1.87 2.77-1.9.43 0 .97.22 1.4.35.48.14.9.32 1.32.48.7.27 1.95.62 2.37 1.21.44.61.69 1.61.59 2.23-.2 1.24-2.23 2.6-3.45 3.06zm-4.8-22.8c5.96 0 10.78 4.82 10.78 10.77h1.53c0-6.8-5.5-12.3-12.3-12.3v1.53z"/><path d="M12.53 9.33v1.55c.78 0 1.42.63 1.42 1.42h1.55a2.97 2.97 0 00-2.97-2.97zm0-3.08a6.05 6.05 0 016.06 6.05h1.58a7.64 7.64 0 00-7.64-7.64v1.59z"/></svg>
+                    </div>
+                  </label>
                 </div>
-              </label>
-            </div>
-            <div class="order-form__item">
-              <label class="labeled-field labeled-field--type--input labeled-field---theme--highlighted">
-                <span class="labeled-field__text">E-MAIL</span>
-                <div class="labeled-field__object-container">
-                  <input class="labeled-field__object" type="text"  name="email" placeholder="Ваш Email*">
-                  <svg class="labeled-field__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" aria-hidden="true"><path d="M28 5H4a4 4 0 00-4 4v13a4 4 0 004 4h24a4 4 0 004-4V9a4 4 0 00-4-4zM2 10.25l7 5.25-7 5.25v-10.5zM30 22a2 2 0 01-2 2H4a2 2 0 01-2-2l7.83-5.88 4.37 3.28a3.01 3.01 0 003.6 0l4.37-3.27L30 22zm0-1.25l-7-5.25 7-5.25v10.5zM17.2 18.6a1.98 1.98 0 01-2.4 0l-4.14-3.1-.83-.63L2 9c0-1.1.9-2 2-2h24a2 2 0 012 2l-12.8 9.6z"/></svg>
+                <div class="order-form__item">
+                  <label class="labeled-field labeled-field--type--input labeled-field--theme--highlighted">
+                    <span class="labeled-field__text">E-MAIL</span>
+                    <div class="labeled-field__object-container">
+                      <input class="labeled-field__object" type="text"  name="email" placeholder="Ваш Email*">
+                      <svg class="labeled-field__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" aria-hidden="true"><path d="M28 5H4a4 4 0 00-4 4v13a4 4 0 004 4h24a4 4 0 004-4V9a4 4 0 00-4-4zM2 10.25l7 5.25-7 5.25v-10.5zM30 22a2 2 0 01-2 2H4a2 2 0 01-2-2l7.83-5.88 4.37 3.28a3.01 3.01 0 003.6 0l4.37-3.27L30 22zm0-1.25l-7-5.25 7-5.25v10.5zM17.2 18.6a1.98 1.98 0 01-2.4 0l-4.14-3.1-.83-.63L2 9c0-1.1.9-2 2-2h24a2 2 0 012 2l-12.8 9.6z"/></svg>
+                    </div>
+                  </label>
                 </div>
-              </label>
+              </div>
             </div>
-            <div class="order-form__item">
-              <label class="labeled-field labeled-field--type--textarea labeled-field---theme--highlighted">
-                <span class="labeled-field__text">ДОП</span>
-                <div class="labeled-field__object-container">
-                  <textarea class="labeled-field__object" name="extra-wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="order-form__fake-fieldset">
+              <div class="order-form__wrapper">
+                <div class="order-form__item" data-width="100%">
+                  <label class="labeled-field labeled-field--type--textarea labeled-field--theme--highlighted">
+                    <span class="labeled-field__text">ДОП</span>
+                    <div class="labeled-field__object-container">
+                      <textarea class="labeled-field__object" name="extra-wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                    </div>
+                  </label>
                 </div>
-              </label>
+              </div>
             </div>
-            <p class="order-form__note">* Поля обязательны для заполнения</p>
-            <div class="order-form__control">
-              <button class="control" type="submit">
-                <span class="control__text">Отправить заказ</span>
-              </button>
+            <div class="order-form__footer">
+              <p class="order-form__note">* Поля обязательны для заполнения</p>
+              <div class="order-form__control">
+                <button class="control" type="submit">
+                  <span class="control__text">Отправить заказ</span>
+                </button>
+              </div>
             </div>
           </form>
         </div>

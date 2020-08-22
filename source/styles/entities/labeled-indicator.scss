@@ -82,3 +82,38 @@
     margin-left: 22px;
   }
 }
+
+@media (min-width: $tablet-width) {
+
+  .labeled-indicator {
+
+    &--type--checkbox {
+
+      &:nth-child(1),
+      &:nth-child(3),
+      &:nth-child(5) {
+        margin-right: 60px;
+      }
+    }
+
+    &__text {
+      min-width: 120px;
+      font-size: 19px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .labeled-indicator {
+
+    &--type--checkbox {
+
+      &:nth-child(1),
+      &:nth-child(3),
+      &:nth-child(5) {
+        margin-right: 0;
+      }
+    }
+  }
+}
