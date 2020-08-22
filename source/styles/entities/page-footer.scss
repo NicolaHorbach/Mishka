@@ -9,6 +9,13 @@
     background-color: #f1f1f1;
   }
 
+  &__logo {
+
+    &[data-show="tablet"] {
+      display: none;
+    }
+  }
+
   &__copyright {
     display: flex;
     justify-content: center;
@@ -49,5 +56,57 @@
   &__copyright-link:active &__copyright-img {
     fill: #46c1ae;
     fill-opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .page-footer {
+
+    &__body {
+      display: flex;
+      justify-content: space-between; /* Тут сдвиг влево 75px, на дизайне список с иконками не совсем по центру. Так выглядит хорошо, но можно сделать дополнительный маргин 75 слева, чтобы было как в дизайне */
+      box-sizing: border-box;
+      width: 768px;
+      padding: 50px;
+    }
+
+    &__logo {
+
+      &[data-show="tablet"] {
+        display: flex;
+      }
+    }
+
+    &__copyright {
+      padding: 0;
+    }
+
+    &__link {
+      display: flex;
+    }
+
+    &__img {
+      fill: #000000;
+    }
+
+    &__link:hover &__img,
+    &__link:focus &__img {
+      fill: #46c1ae;
+    }
+
+    &__link:active &__img {
+      fill-opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .page-footer {
+
+    &__body {
+      width: 1150px;
+    }
   }
 }
