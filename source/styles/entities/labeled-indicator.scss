@@ -67,8 +67,13 @@
   }
 
   // Change custom radio border color on component hover and focus:
-  &:hover &__custom-object,
-  &:focus &__custom-object {
+  &:hover &__custom-object {
+    border-color: #62d1ba;
+  }
+
+  //------A11y-------
+  // Change custom radio and checkboxes border color when focus on real:
+  &__object:focus + &__custom-object {
     border-color: #62d1ba;
   }
 
