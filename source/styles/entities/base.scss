@@ -61,3 +61,10 @@ picture {
   height: 1px;
   margin: -1px;
 }
+
+a:focus,
+button:focus {
+  outline-width: 3px;
+  outline-style: solid;
+  outline-color: #ff6a00;
+}
