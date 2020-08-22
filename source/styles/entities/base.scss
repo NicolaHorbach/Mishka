@@ -1,6 +1,6 @@
 body {
   min-width: 320px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 1.4;
   font-weight: 400;
@@ -60,4 +60,11 @@ picture {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+a:focus,
+button:focus {
+  outline-width: 3px;
+  outline-style: solid;
+  outline-color: #ff6a00;
 }
