@@ -131,3 +131,32 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+
+  .item-card {
+
+    &__body {
+      flex-wrap: wrap;
+      width: 315px;
+    }
+
+    &__image {
+      height: 465px;
+      width: 315px;
+    }
+
+    &__info {
+      width: 315px;
+      height: 200px;
+    }
+
+    &__footer {
+      margin-top: 50px;
+    }
+
+    &__control {
+      margin-left: 150px;
+    }
+  }
+}
