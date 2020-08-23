@@ -27,88 +27,31 @@
   }
 }
 
-.modal-form {
-  margin-top: 25px;
+@media (min-width: $tablet-width) {
 
-  &__fieldset {
-    border: none;
-  }
+  .modal {
 
-  &__legend {
-    font-size: 15px;
-    color: #444444;
-    text-align: center;
-  }
+    &__body {
+      top: 42%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 570px;
+      padding: 50px 110px;
+    }
 
-  &__item {
-
-    & + & {
-      margin-left: 8px;
+    &__title {
+      width: 100%;
+      font-size: 30px;
     }
   }
+}
 
-  // Hide real check`s:
-  &__object {
-    position: absolute;
-    left: -99999px;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-  }
+@media (min-width: $tablet_width) {
 
-  // Draw custom check`s:
-  &__custom-object {
+  .modal {
 
-     &::before {
-      content: '';
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      width: 80px;
-      height: 50px;
-      opacity: 0.1;
-      border: 2px solid #444444;
+    &__body {
+      top: 30%;
     }
-  }
-
-  &__indicator {
-    position: relative;
-  }
-
-  &__value {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 50px;
-    font-size: 17px;
-  }
-
-  &__wrapper {
-    display: flex;
-    width: 100%;
-    margin-top: 30px;
-  }
-
-  &__control {
-    width: 100%;
-    margin-top: 30px;
-  }
-
-  // Change custom check`s border color on component hover:
-  &__label:hover &__custom-object::before {
-    opacity: 0.3;
-  }
-
-  // Change custom check`s border color on component focus:
-  &__object:focus + &__custom-object::before {
-    opacity: 0.3;
-  }
-
-  // Change custom check`s border color in active status:
-  &__object:checked + &__custom-object::before {
-    opacity: 1;
-    border-color: #63d1bb;
   }
 }
