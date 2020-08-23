@@ -1,12 +1,15 @@
 .item-card {
 
+  &__body {
+    border: 1px solid #ececee;
+  }
+
   &__image-wrapper {
     display: flex;
   }
 
   &__info {
     padding: 30px;
-    border: 1px solid #ececee;
   }
 
   &__link {
@@ -31,25 +34,31 @@
   }
 
   &__details {
+    margin-top: 15px;
     font-size: 13px;
     line-height: 1.4;
     color: #444444;
+  }
+
+  &__footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
 
     // Draw gray line after element:
-    &::after {
+     &::after {
       content: '';
-      display: block;
+      position: absolute;
+      top: -50px;
+      left: 0;
+      right: 0;
       height: 1px;
       margin-top: 25px;
       margin-bottom: 20px;
       flex-grow: 1;
       background-color: #ececee;
     }
-  }
-
-  &__footer {
-    display: flex;
-    align-items: center;
   }
 
   &__price {
@@ -90,5 +99,57 @@
 
   &__body:active {
     box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .item-card {
+    display: flex;
+
+    &__body {
+      width: 670px;
+      display: flex;
+    }
+
+    &__info {
+      width: 50%;
+      box-sizing: border-box;
+    }
+
+    &__link {
+      font-size: 20px;
+    }
+
+    &__details {
+      font-size: 15px;
+    }
+
+    &__footer {
+      margin-top: 180px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .item-card {
+
+    &__body {
+      flex-wrap: wrap;
+      width: 315px;
+    }
+
+    &__info {
+      width: 100%;
+    }
+
+    &__footer {
+      margin-top: 50px;
+    }
+
+    &__control {
+      margin-left: 150px;
+    }
   }
 }
