@@ -67,8 +67,13 @@
   }
 
   // Change custom radio border color on component hover and focus:
-  &:hover &__custom-object,
-  &:focus &__custom-object {
+  &:hover &__custom-object {
+    border-color: #62d1ba;
+  }
+
+  //------A11y-------
+  // Change custom radio and checkboxes border color when focus on real:
+  &__object:focus + &__custom-object {
     border-color: #62d1ba;
   }
 
@@ -80,5 +85,40 @@
   // Make offset between text and indicator:
   &__indicator + &__text {
     margin-left: 22px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .labeled-indicator {
+
+    &--type--checkbox {
+
+      &:nth-child(1),
+      &:nth-child(3),
+      &:nth-child(5) {
+        margin-right: 60px;
+      }
+    }
+
+    &__text {
+      min-width: 120px;
+      font-size: 19px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .labeled-indicator {
+
+    &--type--checkbox {
+
+      &:nth-child(1),
+      &:nth-child(3),
+      &:nth-child(5) {
+        margin-right: 0;
+      }
+    }
   }
 }

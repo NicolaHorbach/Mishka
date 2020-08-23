@@ -28,6 +28,10 @@
     }
   }
 
+  &__fake-fieldset {
+    margin-top: 30px;
+  }
+
   // Styles for fieldset name:
   &__legend {
     display: flex;
@@ -70,8 +74,146 @@
     color: #444444;
   }
 
-  // Offset between user hint and form button:
-  &__note + &__control {
+  &__control {
     margin-top: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .order-form {
+    padding-top: 80px;
+
+    &__body {
+      display: flex;
+      flex-wrap: wrap;
+      width: 768px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__description {
+      padding-left: 50px;
+      padding-right: 50px;
+      font-size: 17px;
+      margin-bottom: auto;
+    }
+
+    &__fieldset {
+      position: relative;
+      box-sizing: border-box;
+      padding: 50px;
+      width: 100%;
+
+      & + & {
+        margin-top: 0;
+      }
+
+      &:nth-child(2) {
+        background-color: #f1f1f1;
+      }
+    }
+
+    &__fake-fieldset {
+      position: relative;
+      box-sizing: border-box;
+      padding: 50px;
+      margin-top: 0;
+      width: 100%;
+
+      &[data-theme="light-grey"] {
+        background-color: #f1f1f1;
+      }
+    }
+
+    &__legend {
+      position: absolute;
+      left: 50px;
+      top: 60px;
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      padding-left: 165px;
+      width: 100%;
+
+      &[data-type="input"] {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__item {
+
+      & + & {
+        margin-top: 25px;
+      }
+
+      &[data-offset-reset="tablet"] {
+        margin-top: 0;
+      }
+
+      &--textarea {
+        width: 100%;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      align-items: center;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    &__note {
+      font-size: 17px;
+      width: 310px;
+      margin-top: 0;
+      order: 3;
+    }
+
+    &__control {
+      width: 230px;
+      margin-top: 0;
+      margin-right: auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .order-form {
+    padding-top: 130px;
+
+    &__body {
+      width: 1150px;
+    }
+
+    &__description,
+    &__fieldset,
+    &__fake-fieldset,
+    &__footer {
+      padding-left: 225px;
+      padding-right: 225px;
+    }
+
+    &__item {
+
+      &[data-offset-reset="desktop"] {
+        margin-top: 0;
+      }
+    }
+
+    &__wrapper {
+      padding-left: 0;
+
+      &[data-flex-direction="column"] {
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
 }

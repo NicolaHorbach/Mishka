@@ -52,7 +52,7 @@
   }
 
   // Color theme for text:
-  &---theme--highlighted &__text {
+  &--theme--highlighted &__text {
     padding-top: 5px;
     color: #63d1bb;
 
@@ -88,5 +88,52 @@
   &:focus &__icon {
     fill: #62d1ba;
     fill-opacity: 1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .labeled-field {
+
+    &--type--input {
+      position: relative;
+      display: flex;
+    }
+
+    &__text {
+      margin-right: 25px;
+      min-width: 100px;
+      font-size: 19px;
+
+      &--position--absolute {
+        position: absolute;
+        left: -180px;
+        top: 10px;
+      }
+    }
+
+    &--theme--highlighted &__text {
+
+      &::after {
+        content: none;
+      }
+    }
+
+    &__object-container {
+      display: flex;
+      width: 100%;
+    }
+
+    &__object {
+      background-color: transparent;
+    }
+
+    &--type--textarea {
+      position: relative;
+    }
+
+    &--type--textarea &__object {
+      margin-top: 0;
+    }
   }
 }
