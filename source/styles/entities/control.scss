@@ -8,6 +8,15 @@
   border: 2px solid #444444;
   background-color: #ffffff;
 
+  &--theme--blue {
+    background-color: #63d1bb;
+    border-color: #63d1bb;
+  }
+
+  &--theme--blue &__text {
+    color: #ffffff;
+  }
+
   // Control text styles:
   &__text {
     font-size: 17px;
@@ -32,5 +41,10 @@
   // Change control text color on component click:
   &:active &__text {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--theme--blue:hover,
+  &--theme--blue:focus {
+    background-color: #46c1ae;
   }
 }

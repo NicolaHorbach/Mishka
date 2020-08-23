@@ -11,7 +11,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -67,4 +68,11 @@ button:focus {
   outline-width: 3px;
   outline-style: solid;
   outline-color: #ff6a00;
+}
+
+.content {
+
+  &.is-blacked-out {
+    opacity: 0.1;
+  }
 }
