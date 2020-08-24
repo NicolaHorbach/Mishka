@@ -2,7 +2,7 @@ const triggersElements = document.querySelectorAll('[data-trigger]');
 const modalElement = document.querySelector('[data-triggeredBy]');
 const modalBackdrop = document.querySelector('.modal-backdrop')
 const showClassname = 'is-opened';
-const bodyBlackout = 'is-blacked-out';
+const bodyBlackout = 'is-hidden';
 
 function showModal () {
   modalElement.classList.toggle(showClassname);
