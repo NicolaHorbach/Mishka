@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/toggle.js" async defer></script>
+    <script src="js/modal.js" async defer></script>
   </head>
   <body>
     <header class="page-header">
@@ -121,7 +122,7 @@
             </div>
             <p class="week-offer__price">Цена: 990 руб.</p>
             <div class="week-offer__control">
-              <a class="control" href="#">
+              <a class="control" data-trigger="modal-form">
                 <span class="control__text">Заказать</span>
               </a>
             </div>
@@ -233,16 +234,7 @@
             </div>
           </div>
           <div class="contact-us__map-container">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="images/map-desktop.png x1, images/map-desktop@2x.png 2x">
-              <source media="(min-width:768px)" srcset="images/map-tablet.png x1, images/map-tablet@2x.png 2x">
-              <img class="contact-us__map" src="images/map-mobile.png" srcset="images/map-mobile@2x.png 2x" width="320" height="457" alt="Карта проезда к нашему офису">
-            </picture>
-          </div>
-          <div class="contact-us__control">
-            <a class="control" href="#">
-              <span class="control__text">Напишите нам</span>
-            </a>
+            <iframe class="contact-us__map" src="https://maps.google.com/maps?q=%D0%B3.%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,%20%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F,%20%20%D0%B4.%2019/8+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="320" height="457"></iframe>
           </div>
         </div>
       </section>
@@ -279,5 +271,51 @@
         </div>
       </div>
     </footer>
+    <div class="modal-backdrop is-hidden"></div>
+    <section class="modal" data-triggeredBy="modal-form">
+      <div class="modal__body">
+        <h4 class="modal__title">Добавить в&nbsp;корзину</h4>
+        <form class="modal-form" action="/" method="POST">
+          <fieldset class="modal-form__fieldset">
+            <legend class="modal-form__legend">Выберите размер:</legend>
+            <div class="modal-form__wrapper">
+              <div class="modal-form__item">
+                <label class="modal-form__label">
+                  <span class="modal-form__indicator">
+                    <input class="modal-form__object" type="radio" name="size[]" value="S" checked>
+                    <span class="modal-form__custom-object" aria-hidden="true"></span>
+                  </span>
+                  <span class="modal-form__value">S</span>
+                </label>
+              </div>
+              <div class="modal-form__item">
+                <label class="modal-form__label">
+                  <span class="modal-form__indicator">
+                    <input class="modal-form__object" type="radio" name="size[]" value="M">
+                    <span class="modal-form__custom-object" aria-hidden="true"></span>
+                  </span>
+                  <span class="modal-form__value">M</span>
+                </label>
+              </div>
+              <div class="modal-form__item">
+                <label class="modal-form__label">
+                  <span class="modal-form__indicator">
+                    <input class="modal-form__object" type="radio" name="size[]" value="L">
+                    <span class="modal-form__custom-object" aria-hidden="true"></span>
+                  </span>
+                  <span class="modal-form__value">L</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <div class="modal-form__control">
+            <button class="control control--theme--blue" type="submit" data-trigger="modal-form">
+              <span class="control__text">Добавить</span>
+            </button>
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

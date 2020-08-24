@@ -47,7 +47,7 @@
     margin-top: 50px;
 
     // Draw gray line after element:
-     &::after {
+    &::after {
       content: '';
       position: absolute;
       top: -50px;
