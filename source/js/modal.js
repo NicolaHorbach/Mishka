@@ -1,19 +1,21 @@
-const modalTrigger = document.querySelector('.modal-trigger');
-// допустим, есть 2 таких кнопки, как заставить каждую из них открывать окно? querySelectorAll не работает в моем понимании
-const modalSubmite = document.querySelector('.modal-submit')
-const bodyBlackout = document.querySelector('.body-blackout');
-const modal = document.querySelector('.modal');
+const triggersElements = document.querySelectorAll('[data-trigger]');
+const modalElement = document.querySelector('[data-triggeredBy]');
+const modalBackdrop = document.querySelector('.modal-backdrop')
+const showClassname = 'is-opened';
+const bodyBlackout = 'is-blacked-out';
 
-function changeModalVisibility () {
-  modal.classList.toggle('is-opened');
-  bodyBlackout.classList.toggle('is-blacked-out');
+function showModal () {
+  modalElement.classList.toggle(showClassname);
+  modalBackdrop.classList.toggle(bodyBlackout);
 }
 
-modalTrigger.addEventListener('click', function () {
-  changeModalVisibility ();
-})
+triggersElements.forEach(el => {
+  el.addEventListener('click', e => {
+    e.preventDefault();
+    showModal();
+  });
+});
 
-modalSubmite.addEventListener('click', function () {
-  // тут должна быть функция добавоения в корзину
-  changeModalVisibility ();
-})
+modalBackdrop.addEventListener('click', el => {
+  showModal();
+});
