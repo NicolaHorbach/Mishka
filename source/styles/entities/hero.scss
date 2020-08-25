@@ -14,7 +14,7 @@
   &__body {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    width: 100%;
     min-height: 490px;
     padding-top: 75px;
     margin: 0 auto;
@@ -24,13 +24,12 @@
 
   &__title {
     margin-bottom: auto;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 12%;
+    padding-right: 12%;
     box-sizing: border-box;
     font-size: 27px;
     font-weight: 700;
     text-align: center;
-    word-break: break-word;
   }
 
   &__menu-item {
@@ -44,7 +43,7 @@
   &__menu-link {
     display: flex;
     align-items: center;
-    padding: 22px 30px;
+    padding: 22px 12%;
     box-sizing: border-box;
 
     &:hover,
@@ -86,6 +85,17 @@
   &__menu-item:nth-child(2) &__menu-link:hover,
   &__menu-item:nth-child(2) &__menu-link:focus {
     background-color: #46c1ae;
+  }
+}
+
+@media (min-width: 450px) {
+
+  .hero {
+
+    &__body {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
   }
 }
 
