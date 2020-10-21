@@ -1,5 +1,5 @@
 # Training project Mishka
-For this project used:
+For this project used: <br>
   Gulp
   Sass
   JavaScript
