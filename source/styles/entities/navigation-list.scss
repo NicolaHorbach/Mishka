@@ -66,6 +66,10 @@
   .navigation-list {
     display: flex;
 
+    &.is-opened {
+      display: flex;
+    }
+
     &__item {
       position: relative;
       box-shadow: none;
