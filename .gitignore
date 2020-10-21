@@ -13,3 +13,4 @@ node_modules
 source/css/*.css
 source/css/*.css.map
 !source/css/normalize.css
+!source/css/style.min.css
